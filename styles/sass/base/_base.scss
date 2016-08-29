@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  &:before, &:after {
+    box-sizing: border-box;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+html, input {
+  font-size: 100%;
+}
+
+body {
+  font-family: $body-font;
+  @include font-size($base-font-size);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+a {
+  text-decoration: underline;
+
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+  }
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $base-font-size*2;
+}
+
+h1, h2, h3 {
+  font-family: $heading-font;
+}
+
+h1 {
+  @include font-size($large-font-size);
+}
+
+h2 {
+  @include font-size($medium-font-size);
+}
+
+h3, h4, h5, h6 {
+  font-weight: bold;
+}

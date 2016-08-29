@@ -1,0 +1,11 @@
+@font-face{ 
+  font-family: 'bebas-neue';
+  src: url('fonts/bebasneue-webfont.eot');
+  src: url('fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/bebasneue-webfont.woff') format('woff'),
+       url('fonts/bebasneue-webfont.ttf') format('truetype'),
+       url('fonts/bebasneue-webfont.svg#webfont') format('svg');
+}
+
+$heading-font: 'bebas-neue', helvetica, arial, sans-serif;
+$body-font: helvetica, arial, sans-serif;
