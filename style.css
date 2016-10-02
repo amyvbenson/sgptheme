@@ -222,6 +222,9 @@ h3, h4, h5, h6 {
 .row:after {
   clear: both;
 }
+.row div[class*='col-'] {
+  padding: 0 16px;
+}
 
 /* Standard grid */
 .col-xs-12, .col-xs-11, .col-xs-10, .col-xs-9, .col-xs-8, .col-xs-7, .col-xs-6, .col-xs-5, .col-xs-4, .col-xs-3, .col-xs-2, .col-xs-1 {
@@ -495,7 +498,7 @@ h3, h4, h5, h6 {
     padding-left: 16px;
   }
 
-  div[class*='col-'] .row {
+  .row {
     margin-left: -16px;
     margin-right: -16px;
   }
@@ -1298,6 +1301,19 @@ button, input[type="submit"] {
     margin: 0 16px;
   }
 }
+.site-footer {
+  background: #333;
+  color: white;
+  padding: 32px 0;
+  margin-top: 48px;
+}
+
+.site-footer__small-print {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
 .main-content {
   background: white;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);

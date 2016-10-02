@@ -23,6 +23,10 @@
 
 .row {
   @include clearfix;
+
+  div[class*='col-'] {
+    padding: 0 $base-unit*2;
+  }
 }
 
 /* Standard grid */
@@ -239,7 +243,7 @@
     padding-left: $base-unit*2;
   }
 
-  div[class*='col-'] .row {
+  .row {
     margin-left: -$base-unit*2;
     margin-right: -$base-unit*2;
   }
