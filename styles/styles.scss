@@ -16,6 +16,11 @@ Author: Amy Benson
 @import 'sass/mixins/media-query';
 @import 'sass/mixins/clearfix';
 @import 'sass/mixins/font-size';
+@import 'sass/helpers/sr-only';
 @import 'sass/base/reset';
 @import 'sass/base/base';
 @import 'sass/base/grid';
+@import 'sass/forms/generic-form-styles';
+@import 'sass/header/site-header';
+@import 'sass/header/site-nav';
+@import 'sass/header/search-form';

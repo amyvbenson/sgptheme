@@ -1,11 +1,26 @@
-$green: #6AB023;
-$dark-green: #006341;
-$light-green: #97d700;
-$turquoise: #00afd0;
-$purple: #772583;
-$red: #f93822;
-$dark-blue: #00558c;
-$yellow: #ffd100;
-$pink: #f04e98;
-$grey: #d1ccbd;
-$light-grey: #EEE;
+
+$medium-grey: #777; // ok with large white text
+$dark-grey: #333; // ok with white text at any size
+$gp-green: #6AB023; // not accessible with white text
+$medium-green: #59941d; // ok with large white text
+$dark-green: #006341; // ok with white text at any size
+
+
+$text-dark: $dark-grey;
+$text-light: white;
+$block-green: $medium-green;
+$block-grey: $medium-grey;
+
+
+
+// $green: #6AB023;
+// $dark-green: #006341;
+// $light-green: #97d700;
+// $turquoise: #00afd0;
+// $purple: #772583;
+// $red: #f93822;
+// $dark-blue: #00558c;
+// $yellow: #ffd100;
+// $pink: #f04e98;
+// $grey: #d1ccbd;
+// $light-grey: #EEE;

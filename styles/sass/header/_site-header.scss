@@ -1,0 +1,35 @@
+.site-header {
+  background: $gp-green;
+  // padding: $base-unit*2 0;
+}
+
+.site-header__logo {
+  width: 80%;
+  max-width: 220px;
+  display: block;
+  line-height: 0;
+  padding: $base-unit*2 0;
+}
+
+@include media-query (xs) {
+
+  .site-header__logo {
+    max-width: 360px;
+  }
+
+}
+
+@include media-query (sm) {
+
+  .site-header {
+    
+  }
+
+  .site-header__logo {
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: $base-unit*1.5 0;
+  }
+
+}

@@ -1,0 +1,35 @@
+input,
+button {
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  @include font-size($base-font-size);
+  font-family: $body-font;
+}
+
+input[type="search"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: $base-unit;
+}
+
+button, input[type="submit"] {
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $text-dark;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $text-dark;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $text-dark;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $text-dark;
+}
+
