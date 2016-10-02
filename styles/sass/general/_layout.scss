@@ -1,0 +1,15 @@
+.main-content {
+  background: $block-white;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  padding: $base-unit*2;
+  // margin-top: $base-unit*2;
+}
+
+@include media-query(sm) {
+
+  .main-content {
+    padding: $base-unit*4;
+    // margin-top: $base-unit*4;
+  }
+
+}

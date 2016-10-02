@@ -115,6 +115,29 @@ function sgp_scripts() {
 add_action( 'wp_enqueue_scripts', 'sgp_scripts' );
 
 /**
+ * Get child pages for sidebar nav
+ */
+function wpb_list_child_pages() { 
+
+	global $post; 
+
+	if ( is_page() && $post->post_parent ) {
+		$parentpage = get_the_title($post->post_parent);
+		$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0&depth=1' );
+	} else {
+		$parentpage = $post->post_title;
+		$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0&depth=1' );
+	}
+
+	if ( $childpages ) {
+		$string = '<nav class="pages-nav"><h2 class="pages-nav__heading">' . $parentpage . '</h2><ul class="pages-nav__list">' . $childpages . '</ul></nav>';
+	}
+
+	return $string;
+
+}
+
+/**
  * Implement the Custom Header feature.
  */
 // require get_template_directory() . '/inc/custom-header.php';

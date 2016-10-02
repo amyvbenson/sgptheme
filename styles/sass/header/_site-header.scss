@@ -1,6 +1,6 @@
 .site-header {
   background: $gp-green;
-  // padding: $base-unit*2 0;
+  margin-bottom: $base-unit*2;
 }
 
 .site-header__logo {
@@ -22,7 +22,7 @@
 @include media-query (sm) {
 
   .site-header {
-    
+    margin-bottom: $base-unit*4;
   }
 
   .site-header__logo {

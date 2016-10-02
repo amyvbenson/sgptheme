@@ -1,6 +1,6 @@
 <a class="skip-link sr-only" href="#main">Skip to content</a>
 <header role="banner" class="site-header">
-  <div class="container">
+  <div class="container container--no-children">
 
     <?php if ( is_front_page() && is_home() ) : ?>
       <h1 class="site-header__logo">
@@ -15,7 +15,7 @@
   </div>
 
   <nav role="navigation" class="site-nav">
-    <div class="container">
+    <div class="container container--no-children">
       <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
       <?php get_search_form() ?>
     </div>
