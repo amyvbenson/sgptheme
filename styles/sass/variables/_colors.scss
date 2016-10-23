@@ -1,4 +1,4 @@
-
+$light-grey: #CCC;
 $medium-grey: #777; // ok with large white text
 $dark-grey: #333; // ok with white text at any size
 $gp-green: #6AB023; // not accessible with white text
@@ -7,24 +7,15 @@ $dark-green: #006341; // ok with white text at any size
 
 
 $text-dark: $dark-grey;
+$text-green: $dark-green;
 $text-light: white;
+
 $block-green: $medium-green;
 $block-grey: $medium-grey;
 $block-dark-grey: $dark-grey;
 $block-white: white;
 
+$border-green: $gp-green;
+$border-grey: $light-grey;
+
 $body-bg: #F2F2F2;
-
-
-
-// $green: #6AB023;
-// $dark-green: #006341;
-// $light-green: #97d700;
-// $turquoise: #00afd0;
-// $purple: #772583;
-// $red: #f93822;
-// $dark-blue: #00558c;
-// $yellow: #ffd100;
-// $pink: #f04e98;
-// $grey: #d1ccbd;
-// $light-grey: #EEE;

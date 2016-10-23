@@ -24,7 +24,7 @@
 .row {
   @include clearfix;
 
-  div[class*='col-'] {
+  [class*='col-'] {
     padding: 0 $base-unit*2;
   }
 }
@@ -238,7 +238,7 @@
     padding: 0 $base-unit*2;
   }
 
-  div[class*='col-'] {
+  [class*='col-'] {
     padding-right: $base-unit*2;
     padding-left: $base-unit*2;
   }

@@ -1,6 +1,7 @@
 input,
-button {
-  border: none;
+button,
+textarea {
+  
   border-radius: 0;
   -webkit-appearance: none;
   @include font-size($base-font-size);
@@ -11,9 +12,11 @@ input[type="search"],
 input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="number"] {
+input[type="number"],
+textarea {
   width: 100%;
   padding: $base-unit;
+  border: 1px solid $border-grey;
 }
 
 button, input[type="submit"] {

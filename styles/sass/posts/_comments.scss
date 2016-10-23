@@ -1,0 +1,15 @@
+.comments {
+  border-top: 2px solid $border-green;
+  margin-top: $base-unit*4;
+  padding-top: $base-unit*2;
+}
+
+.comments__heading {
+  color: $text-green;
+  margin-bottom: 0;
+}
+
+.comments__disclaimer {
+  @include font-size($small-font-size);
+  font-weight: bold;
+}

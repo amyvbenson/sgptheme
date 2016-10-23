@@ -23,11 +23,13 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
   display: inline-block;
 }
 
 a {
   text-decoration: underline;
+  color: $text-green;
 
   &:hover, &:focus, &:active {
     text-decoration: none;
@@ -52,4 +54,39 @@ h2 {
 
 h3, h4, h5, h6 {
   font-weight: bold;
+}
+
+ul, ol {
+  list-style: initial;
+  margin: 0 0 0 $base-unit*3;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li {
+  margin-bottom: $base-unit;
+}
+
+img.alignright {
+  float: right;
+  margin: 0 0 $base-unit*2 $base-unit*2;
+}
+
+img.alignleft {
+  float: left;
+  margin: 0 $base-unit*2 0;
+}
+
+#main:focus {
+  outline: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
 }

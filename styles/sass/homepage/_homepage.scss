@@ -1,13 +1,10 @@
-.main-content {
+.home-section {
   background: $block-white;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   padding: $base-unit*2;
 }
 
-@include media-query(sm) {
-
-  .main-content {
-    padding: $base-unit*4;
-  }
-
+.home-section__heading {
+  @include font-size($large-font-size);
+  margin: 0;
 }

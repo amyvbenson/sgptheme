@@ -117,7 +117,7 @@ add_action( 'wp_enqueue_scripts', 'sgp_scripts' );
 /**
  * Get child pages for sidebar nav
  */
-function wpb_list_child_pages() { 
+function sgp_list_child_pages() { 
 
 	global $post; 
 
@@ -135,6 +135,33 @@ function wpb_list_child_pages() {
 
 	return $string;
 
+}
+
+/**
+ * Get post from a specific category
+ */
+function sgp_category_posts($category_slug, $num_posts) {
+	global $post;
+	$args = array( 'category_name' => $category_slug, 'numberposts' => $num_posts);
+  return new WP_Query( $args);
+}
+
+/**
+ * Use first image from post if no thumbnail 
+ * Source: https://css-tricks.com/snippets/wordpress/get-the-first-image-from-a-post/
+ */
+function catch_that_image() {
+  global $post, $posts;
+  $first_img = '';
+  ob_start();
+  ob_end_clean();
+	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"][^>]*>/i', $post->post_content, $matches);
+  $first_img = $matches[1][0];
+
+  if(empty($first_img)) {
+    $first_img = get_bloginfo('template_directory') . '/images/default.jpg';
+  }
+  return $first_img;
 }
 
 /**

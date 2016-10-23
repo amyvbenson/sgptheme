@@ -2,7 +2,7 @@
 <header role="banner" class="site-header">
   <div class="container container--no-children">
 
-    <?php if ( is_front_page() && is_home() ) : ?>
+    <?php if ( is_front_page()) : ?>
       <h1 class="site-header__logo">
         <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Sheffield Green Party Homepage" />
       </h1>

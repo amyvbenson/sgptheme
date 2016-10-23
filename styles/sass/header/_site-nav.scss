@@ -19,6 +19,15 @@
   }
 }
 
+.menu {
+  list-style: none;
+  margin: 0;
+}
+
+.menu-item {
+  margin: 0;
+}
+
 @include media-query(sm) {
 
   .site-nav {
@@ -47,7 +56,6 @@
 
     .menu-item {
       display: inline-block;
-      margin: 0
     }
 
   }

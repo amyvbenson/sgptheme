@@ -7,6 +7,7 @@
 
 .search-field {
   font-family: $heading-font;
+  border: none;
 }
 
 .search-submit {
@@ -17,6 +18,7 @@
   top: 2px;
   background: white url('images/search-icon.svg') no-repeat center;
   text-indent: -999999px;
+  border: none;
 }
 
 @include media-query(sm) {
@@ -24,7 +26,6 @@
   .search-form {
     width: $base-unit*24;
     display: inline-block;
-    
   }
 
 }
