@@ -202,14 +202,8 @@ li {
   margin-bottom: 8px;
 }
 
-img.alignright {
-  float: right;
-  margin: 0 0 16px 16px;
-}
-
-img.alignleft {
-  float: left;
-  margin: 0 16px 0;
+img.alignright, .wp-caption.alignright, img.alignleft, .wp-caption.alignleft, img.alignnone, .wp-caption.alignnone {
+  margin: 0 0 16px 0;
 }
 
 #main:focus {
@@ -224,6 +218,17 @@ em {
   font-style: italic;
 }
 
+@media only screen and (min-width: 450px) {
+  img.alignright, .wp-caption.alignright {
+    float: right;
+    margin: 0 0 16px 16px;
+  }
+
+  img.alignleft, .wp-caption.alignleft {
+    float: left;
+    margin: 0 16px 16px 0;
+  }
+}
 /**
  *
  * Grid
@@ -1374,6 +1379,18 @@ button, input[type="submit"] {
     padding: 32px;
   }
 }
+.wp-caption {
+  padding: 8px;
+  border: 1px solid #CCC;
+  max-width: 100%;
+}
+
+.wp-caption-text {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
 .page-header {
   margin-bottom: 24px;
 }

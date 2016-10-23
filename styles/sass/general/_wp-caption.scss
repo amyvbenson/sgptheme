@@ -1,0 +1,10 @@
+.wp-caption {
+  padding: $base-unit;
+  border: 1px solid $border-grey;
+  max-width: 100%;
+}
+
+.wp-caption-text {
+  @include font-size($small-font-size);
+  font-weight: bold;
+}

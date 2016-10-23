@@ -69,14 +69,8 @@ li {
   margin-bottom: $base-unit;
 }
 
-img.alignright {
-  float: right;
-  margin: 0 0 $base-unit*2 $base-unit*2;
-}
-
-img.alignleft {
-  float: left;
-  margin: 0 $base-unit*2 0;
+img.alignright, .wp-caption.alignright, img.alignleft, .wp-caption.alignleft, img.alignnone, .wp-caption.alignnone {
+  margin: 0 0 $base-unit*2 0;
 }
 
 #main:focus {
@@ -89,4 +83,18 @@ strong {
 
 em {
   font-style: italic;
+}
+
+@include media-query(xs) {
+
+  img.alignright, .wp-caption.alignright {
+    float: right;
+    margin: 0 0 $base-unit*2 $base-unit*2;
+  }
+
+  img.alignleft, .wp-caption.alignleft {
+    float: left;
+    margin: 0 $base-unit*2 $base-unit*2 0;
+  }
+
 }

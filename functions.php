@@ -165,6 +165,37 @@ function catch_that_image() {
 }
 
 /**
+ * Override wp-caption too make it responsive
+ */
+function responsive_wp_caption($val, $attr, $content = NULL) {
+    extract( shortcode_atts( 
+        array(
+         'id' => '',
+         'align' => '',
+         'width' => '',
+         'caption' => '',
+        ), 
+        $attr 
+      )
+    );
+ 
+    if ( intval( $width ) < 1 || empty( $caption ) ) {
+        return $val;
+    }
+ 
+    $id = $id ? ('id="' . $id . '" ') : '';
+ 
+    $new_caption = '<figure class="wp-caption ' . $align .'" style="width: 100%; max-width: ' . $width . 'px">';
+    $new_caption .= do_shortcode( $content );
+    $new_caption .= '<figcaption class="wp-caption-text">' . $caption . '</figcaption>';
+    $new_caption .= '</figure>';
+ 
+    return $new_caption;
+}
+ 
+add_filter( 'img_caption_shortcode', 'responsive_wp_caption', 10, 3 );
+
+/**
  * Implement the Custom Header feature.
  */
 // require get_template_directory() . '/inc/custom-header.php';
