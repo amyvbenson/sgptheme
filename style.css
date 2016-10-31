@@ -1413,6 +1413,7 @@ button, input[type="submit"] {
   border-bottom: 1px solid #6AB023;
   margin: 0;
   padding-bottom: 16px;
+  line-height: 1.2;
 }
 
 .comments {
