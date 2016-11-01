@@ -15,11 +15,7 @@
   </div>
 
   <button type="button" class="site-header__toggle-nav" data-toggle-nav="true">
-    <span class="sr-only">Menu</span>
-    <svg class="icon">
-      <use xlink:href="#icon-menu"></use>
-    </svg>
-
+    <?php echo svg_icon('menu', 'Menu') ?>
   </button>
 
   <nav role="navigation" class="site-nav" data-nav="true">

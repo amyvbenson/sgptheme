@@ -166,6 +166,21 @@ function catch_that_image() {
 }
 
 /**
+ * Create svg icon
+ */
+function svg_icon($icon, $sr_text = '') {
+  $svg = '<svg class="icon" aria-hidden="true">';
+  $svg .= '<use xlink:href="#icon-'. $icon .'"></use>';
+  $svg .= '</svg>';
+
+  if ($sr_text) {
+    $svg .= '<span class="sr-only">'. $sr_text . '</span>' ;
+  }
+
+  return $svg;
+}
+
+/**
  * Override wp-caption too make it responsive
  */
 function responsive_wp_caption($val, $attr, $content = NULL) {

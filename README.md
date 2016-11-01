@@ -78,8 +78,8 @@ TO DO: see if using an external svg sprite would be better.
 
 ### Using icons
 
+Pass in the icon name and (optionally) screen-reader only text.
+
 ```
-<svg class="icon">
-  <use xlink:href="#icon-menu"></use>
-</svg>
+<?php echo svg_icon('menu', 'Menu') ?>
 ```
