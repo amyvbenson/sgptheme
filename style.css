@@ -1227,11 +1227,33 @@ button, input[type="submit"] {
   display: block;
   line-height: 0;
   padding: 16px 0;
+  margin: 0;
+}
+
+.site-header__toggle-nav {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  padding: 0;
+  -webkit-appearance: none;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+}
+.site-header__toggle-nav svg.icon {
+  fill: white;
+  width: 32px;
+  height: 32px;
 }
 
 @media only screen and (min-width: 450px) {
   .site-header__logo {
     max-width: 360px;
+  }
+
+  .site-header__toggle-nav {
+    top: 20px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1244,6 +1266,10 @@ button, input[type="submit"] {
     max-width: 600px;
     margin: 0 auto;
     padding: 12px 0;
+  }
+
+  .site-header__toggle-nav {
+    display: none;
   }
 }
 .site-nav {
@@ -1265,6 +1291,17 @@ button, input[type="submit"] {
 .site-nav a:hover, .site-nav a:focus {
   background: #59941d;
   padding-left: 16px;
+}
+.js .site-nav {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease;
+          transition: max-height 0.3s ease;
+}
+.site-nav.show {
+  max-height: 500px;
+  padding: 8px 0;
 }
 
 .menu {
@@ -1300,6 +1337,10 @@ button, input[type="submit"] {
   }
   .site-nav a:hover, .site-nav a:focus {
     padding-left: 8px;
+  }
+  .js .site-nav {
+    max-height: none;
+    padding: 8px 0;
   }
 
   .menu-primary-menu-container {
@@ -1379,6 +1420,11 @@ button, input[type="submit"] {
     padding: 32px;
   }
 }
+svg.icon {
+  width: 24px;
+  height: 24px;
+}
+
 .wp-caption {
   padding: 8px;
   border: 1px solid #CCC;

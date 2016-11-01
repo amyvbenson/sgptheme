@@ -14,7 +14,15 @@
 
   </div>
 
-  <nav role="navigation" class="site-nav">
+  <button type="button" class="site-header__toggle-nav" data-toggle-nav="true">
+    <span class="sr-only">Menu</span>
+    <svg class="icon">
+      <use xlink:href="#icon-menu"></use>
+    </svg>
+
+  </button>
+
+  <nav role="navigation" class="site-nav" data-nav="true">
     <div class="container container--no-children">
       <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
       <?php get_search_form() ?>

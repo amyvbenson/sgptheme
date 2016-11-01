@@ -104,6 +104,7 @@ add_action( 'widgets_init', 'sgp_widgets_init' );
 function sgp_scripts() {
   wp_enqueue_style( 'sgp-style', get_stylesheet_uri() );
   wp_enqueue_script('jquery');
+  wp_enqueue_script( 'sgp-nav', get_template_directory_uri() . '/js/nav.js', array(), '20151215', true );
 	wp_enqueue_script( 'sgp-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
   wp_enqueue_script( 'responsive-video', get_template_directory_uri() . '/js/responsive-video.js', array(), '20161029', true );
   wp_enqueue_script( 'faux-links', get_template_directory_uri() . '/js/faux-links.js', array(), '20161029', true );

@@ -9,12 +9,35 @@
   display: block;
   line-height: 0;
   padding: $base-unit*2 0;
+  margin: 0;
+}
+
+.site-header__toggle-nav {
+  width: $base-unit*5;
+  height: $base-unit*5;
+  background: none;
+  border: none;
+  padding: 0;
+  -webkit-appearance: none;
+  position: absolute;
+  top: $base-unit*1.5;
+  right: $base-unit*2;
+
+  svg.icon {
+    fill: white;
+    width: $base-unit*4;
+    height: $base-unit*4;
+  }
 }
 
 @include media-query (xs) {
 
   .site-header__logo {
     max-width: 360px;
+  }
+
+  .site-header__toggle-nav {
+    top: $base-unit*2.5;
   }
 
 }
@@ -30,6 +53,10 @@
     max-width: 600px;
     margin: 0 auto;
     padding: $base-unit*1.5 0;
+  }
+
+  .site-header__toggle-nav {
+    display: none;
   }
 
 }
