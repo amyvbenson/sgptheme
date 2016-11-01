@@ -1462,6 +1462,55 @@ svg.icon {
   line-height: 1.2;
 }
 
+.pages-nav {
+  background: white;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  margin: 16px 0;
+}
+
+.pages-nav__heading {
+  color: white;
+  background: #006341;
+  font-family: "bebas-neue", helvetica, arial, sans-serif;
+  padding: 8px 16px;
+  margin: 0;
+}
+.pages-nav__heading a {
+  color: white;
+  text-decoration: none;
+}
+.pages-nav__heading a:hover, .pages-nav__heading a:focus {
+  text-decoration: underline;
+}
+
+.pages-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 16px;
+}
+.pages-nav__list li {
+  margin: 0;
+  border-bottom: 1px solid #CCC;
+}
+.pages-nav__list li:last-child {
+  border-bottom: none;
+}
+.pages-nav__list a {
+  color: #333;
+  text-decoration: none;
+  padding: 16px 0;
+  display: block;
+  line-height: 1;
+}
+.pages-nav__list a:hover, .pages-nav__list a:focus {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+  .pages-nav {
+    margin: 0 0 16px 0;
+  }
+}
 .comments {
   border-top: 2px solid #6AB023;
   margin-top: 32px;

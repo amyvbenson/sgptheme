@@ -118,24 +118,25 @@ add_action( 'wp_enqueue_scripts', 'sgp_scripts' );
 /**
  * Get child pages for sidebar nav
  */
-function sgp_list_child_pages() { 
+function sgp_pages_nav() {
+  global $post; 
 
-	global $post; 
+  if (!$post->post_parent) {
+    $parentpage = get_the_title($post->post_parent);
+    $children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0&depth=1");
+  } else {
+    if ($post->ancestors) {
+      $parentpage = get_the_title(end($post->ancestors));
+      $ancestors = end($post->ancestors);
+      $children = wp_list_pages("title_li=&child_of=".$ancestors."&echo=0&depth=1");
+    }
+  }
 
-	if ( is_page() && $post->post_parent ) {
-		$parentpage = get_the_title($post->post_parent);
-		$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0&depth=1' );
-	} else {
-		$parentpage = $post->post_title;
-		$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0&depth=1' );
-	}
-
-	if ( $childpages ) {
-		$string = '<nav class="pages-nav"><h2 class="pages-nav__heading">' . $parentpage . '</h2><ul class="pages-nav__list">' . $childpages . '</ul></nav>';
-	}
-
-	return $string;
-
+  if ($children) {
+    $heading = '<h2 class="pages-nav__heading"><a href="' . get_permalink($parentpage) . '">' . $parentpage . '</a></h2>';
+    $string = '<nav class="pages-nav">' . $heading . '<ul class="pages-nav__list">' . $children . '</ul></nav>';
+  }
+  return $string;
 }
 
 /**

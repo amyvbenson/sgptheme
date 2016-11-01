@@ -13,10 +13,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <aside id="secondary" class="widget-area" role="complementary">
-
-<?php echo sgp_list_child_pages(); ?>
-
-<?php // wp_list_pages('depth=1&title_li=&child_of='.$post->ID.''); ?>
-
+  <?php echo sgp_pages_nav(); ?>
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</aside><!-- #secondary -->
+</aside>
