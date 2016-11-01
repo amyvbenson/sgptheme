@@ -1478,6 +1478,7 @@ svg.icon {
 .pages-nav__heading a {
   color: white;
   text-decoration: none;
+  display: block;
 }
 .pages-nav__heading a:hover, .pages-nav__heading a:focus {
   text-decoration: underline;
