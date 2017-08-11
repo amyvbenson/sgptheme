@@ -82,6 +82,14 @@
   }
 
   .menu-item {
+    margin: 0 $base-unit/4;
+  }
+}
+
+@include media-query(lg) {
+
+  .menu-item {
     margin: 0 $base-unit/2;
   }
+
 }
