@@ -1,0 +1,15 @@
+.primary-btn {
+  display: inline-block;
+  -webkit-appearance: none;
+  border: none;
+  background: $dark-green;
+  color: $text-light;
+  font-family: $heading-font;
+  @include font-size($medium-font-size);
+  text-decoration: none;
+  padding: $base-unit;
+
+  &:hover, &:focus {
+    outline: 2px solid $border-green;
+  }
+}

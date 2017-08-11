@@ -3,7 +3,7 @@
   font-family: $heading-font;
   @include font-size($medium-font-size);
   padding: $base-unit 0;
-  
+
   a {
     color: $text-light;
     text-decoration: none;
@@ -67,13 +67,8 @@
 
   }
 
-  .menu-primary-menu-container {
+  .menu-item {
     display: inline-block;
-
-    .menu-item {
-      display: inline-block;
-    }
-
   }
 
 }
@@ -86,12 +81,7 @@
     }
   }
 
-  .menu-primary-menu-container {
-
-    .menu-item {
-      margin: 0 $base-unit/2;
-    }
-
+  .menu-item {
+    margin: 0 $base-unit/2;
   }
-
 }

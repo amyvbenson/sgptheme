@@ -28,6 +28,10 @@
     width: $base-unit*4;
     height: $base-unit*4;
   }
+
+  .admin-bar & {
+    top: $base-unit*7;
+  }
 }
 
 @include media-query (xs) {

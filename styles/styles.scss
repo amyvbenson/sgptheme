@@ -1,7 +1,7 @@
 /*!
 Theme Name: Sheffield Green Party Theme
 Theme URI: http://www.sheffieldgreenparty.org.uk/
-Description: Sheffield Green Party Website theme 
+Description: Sheffield Green Party Website theme
 Version: 0.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -16,6 +16,7 @@ Author: Amy Benson
 @import 'sass/mixins/media-query';
 @import 'sass/mixins/clearfix';
 @import 'sass/mixins/font-size';
+@import 'sass/variables/buttons';
 @import 'sass/helpers/sr-only';
 @import 'sass/base/reset';
 @import 'sass/base/base';

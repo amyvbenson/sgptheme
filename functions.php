@@ -119,7 +119,7 @@ add_action( 'wp_enqueue_scripts', 'sgp_scripts' );
  * Get child pages for sidebar nav
  */
 function sgp_pages_nav() {
-  global $post; 
+  global $post;
 
   if (!$post->post_parent) {
     $parentpage = get_the_title($post->post_parent);
@@ -142,14 +142,14 @@ function sgp_pages_nav() {
 /**
  * Get post from a specific category
  */
-function sgp_category_posts($category_slug, $num_posts) {
+function sgp_category_posts($category_slug, $num_posts, $offset = 0) {
 	global $post;
-	$args = array( 'category_name' => $category_slug, 'numberposts' => $num_posts);
+	$args = array( 'category_name' => $category_slug, 'posts_per_page' => $num_posts, 'offset' => $offset);
   return new WP_Query( $args);
 }
 
 /**
- * Use first image from post if no thumbnail 
+ * Use first image from post if no thumbnail
  * Source: https://css-tricks.com/snippets/wordpress/get-the-first-image-from-a-post/
  */
 function catch_that_image() {
@@ -185,32 +185,48 @@ function svg_icon($icon, $sr_text = '') {
  * Override wp-caption too make it responsive
  */
 function responsive_wp_caption($val, $attr, $content = NULL) {
-    extract( shortcode_atts( 
+    extract( shortcode_atts(
         array(
          'id' => '',
          'align' => '',
          'width' => '',
          'caption' => '',
-        ), 
-        $attr 
+        ),
+        $attr
       )
     );
- 
+
     if ( intval( $width ) < 1 || empty( $caption ) ) {
         return $val;
     }
- 
+
     $id = $id ? ('id="' . $id . '" ') : '';
- 
+
     $new_caption = '<figure class="wp-caption ' . $align .'" style="width: 100%; max-width: ' . $width . 'px">';
     $new_caption .= do_shortcode( $content );
     $new_caption .= '<figcaption class="wp-caption-text">' . $caption . '</figcaption>';
     $new_caption .= '</figure>';
- 
+
     return $new_caption;
 }
- 
+
 add_filter( 'img_caption_shortcode', 'responsive_wp_caption', 10, 3 );
+
+/**
+ * Sets the post excerpt length.
+ */
+function sgp_excerpt_length( $length ) {
+  return 20;
+}
+add_filter( 'excerpt_length', 'sgp_excerpt_length' );
+
+/**
+ * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis
+ */
+function sgp_auto_excerpt_more( $more ) {
+  return '&hellip;';
+}
+add_filter( 'excerpt_more', 'sgp_auto_excerpt_more' );
 
 /**
  * Implement the Custom Header feature.

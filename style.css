@@ -1,7 +1,7 @@
 /*!
 Theme Name: Sheffield Green Party Theme
 Theme URI: http://www.sheffieldgreenparty.org.uk/
-Description: Sheffield Green Party Website theme 
+Description: Sheffield Green Party Website theme
 Version: 0.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -64,6 +64,22 @@ Author: Amy Benson
  * font-size: 0.77777778rem
  *
  */
+.primary-btn {
+  display: inline-block;
+  -webkit-appearance: none;
+  border: none;
+  background: #006341;
+  color: white;
+  font-family: "bebas-neue", helvetica, arial, sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 8px;
+}
+.primary-btn:hover, .primary-btn:focus {
+  outline: 2px solid #6AB023;
+}
+
 .sr-only, .screen-reader-text {
   position: absolute;
   width: 1px;
@@ -146,7 +162,7 @@ html, input {
 }
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -171,7 +187,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 16px;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: "bebas-neue", helvetica, arial, sans-serif;
 }
 
@@ -181,8 +197,8 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 h3, h4, h5, h6 {
@@ -1178,7 +1194,7 @@ textarea {
   -webkit-appearance: none;
   font-size: 16px;
   font-size: 1rem;
-  font-family: helvetica, arial, sans-serif;
+  font-family: sans-serif;
 }
 
 input[type="search"],
@@ -1246,6 +1262,9 @@ button, input[type="submit"] {
   width: 32px;
   height: 32px;
 }
+.admin-bar .site-header__toggle-nav {
+  top: 56px;
+}
 
 @media only screen and (min-width: 450px) {
   .site-header__logo {
@@ -1273,10 +1292,10 @@ button, input[type="submit"] {
   }
 }
 .site-nav {
-  background: #777;
+  background: #686868;
   font-family: "bebas-neue", helvetica, arial, sans-serif;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   padding: 8px 0;
 }
 .site-nav a {
@@ -1284,8 +1303,7 @@ button, input[type="submit"] {
   text-decoration: none;
   padding: 8px 0;
   display: block;
-  -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+  transition: all 0.3s ease;
   line-height: 1;
 }
 .site-nav a:hover, .site-nav a:focus {
@@ -1296,8 +1314,7 @@ button, input[type="submit"] {
   max-height: 0;
   padding: 0;
   overflow: hidden;
-  -webkit-transition: max-height 0.3s ease;
-          transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
 }
 .site-nav.show {
   max-height: 500px;
@@ -1343,10 +1360,7 @@ button, input[type="submit"] {
     padding: 8px 0;
   }
 
-  .menu-primary-menu-container {
-    display: inline-block;
-  }
-  .menu-primary-menu-container .menu-item {
+  .menu-item {
     display: inline-block;
   }
 }
@@ -1358,7 +1372,7 @@ button, input[type="submit"] {
             flex-direction: row;
   }
 
-  .menu-primary-menu-container .menu-item {
+  .menu-item {
     margin: 0 4px;
   }
 }
@@ -1400,7 +1414,6 @@ button, input[type="submit"] {
   background: #333;
   color: white;
   padding: 32px 0;
-  margin-top: 48px;
 }
 
 .site-footer__small-print {
@@ -1541,6 +1554,9 @@ svg.icon {
 .post-preview:after {
   clear: both;
 }
+.post-preview:first-of-type {
+  padding-top: 0;
+}
 
 .post-preview__image {
   float: left;
@@ -1553,19 +1569,23 @@ svg.icon {
   width: 66.66667%;
   padding: 0 0 0 8px;
 }
+.post-preview--simple .post-preview__body {
+  width: 100%;
+  padding: 0;
+}
 
 .post-preview__heading {
-  margin: 0;
+  margin: 0 0 4px 0;
   line-height: 1.2;
   font-size: 16px;
   font-size: 1rem;
-  font-family: "bebas-neue", helvetica, arial, sans-serif;
 }
 .post-preview__heading a {
-  color: #006341;
+  color: #333;
+  text-decoration: none;
 }
 .post-preview__heading a:hover, .post-preview__heading a:focus, .post-preview__heading a:active, .hover .post-preview__heading a {
-  text-decoration: underline;
+  border-bottom: 1px solid #6AB023;
 }
 
 .post-preview__date {
@@ -1575,21 +1595,18 @@ svg.icon {
 }
 
 .post-preview__text {
+  line-height: 1.4;
   font-size: 14px;
   font-size: 0.875rem;
+  color: #767676;
 }
 .post-preview__text p {
-  padding: 0;
+  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 993px) {
   .post-preview {
     padding: 16px 0;
-  }
-
-  .post-preview__heading {
-    font-size: 24px;
-    font-size: 1.5rem;
   }
 }
 .faux-link {
@@ -1605,16 +1622,97 @@ svg.icon {
 
 .home-section {
   background: white;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
+  margin-bottom: 16px;
+}
+
+.home-section--video p {
+  margin-bottom: 0;
 }
 
 .home-section__heading {
   font-size: 32px;
   font-size: 2rem;
-  margin: 0;
+  line-height: 1.1;
+  margin-bottom: 16px;
 }
 
+.home-section__more-link {
+  margin-top: 16px;
+}
+
+.home-ctas {
+  margin-bottom: 16px;
+}
+
+.home-ctas__cta {
+  font-family: "bebas-neue", helvetica, arial, sans-serif;
+  display: block;
+  width: 100%;
+  background: #006341;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1;
+  font-size: 48px;
+  font-size: 3rem;
+  padding: 24px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.home-ctas__cta:hover, .home-ctas__cta:focus {
+  outline: 4px solid #6AB023;
+}
+
+@media only screen and (min-width: 450px) {
+  .home-ctas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .home-ctas__cta {
+    width: 33.33333%;
+    margin-bottom: 0;
+  }
+  .home-ctas__cta:nth-child(2) {
+    margin: 0 8px;
+  }
+
+  .home-ctas--single .home-ctas__cta {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home-ctas {
+    margin: 0 0 16px 0;
+  }
+
+  .home-ctas__cta {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .home-ctas__cta {
+    font-size: 48px;
+    font-size: 3rem;
+  }
+}
 .home-banner {
   width: 100%;
   height: 360px;
