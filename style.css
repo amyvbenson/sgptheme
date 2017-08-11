@@ -1894,7 +1894,7 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
   transition: background 0.3s ease, border 0.3s ease;
   text-decoration: none;
   text-align: center;
-  line-height: 1;
+  line-height: 0.9;
   font-size: 48px;
   font-size: 3rem;
   padding: 16px 8px;

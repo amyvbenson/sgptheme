@@ -25,11 +25,9 @@
   border: 2px solid $border-dark-green;
   background: transparent;
   transition: background 0.3s ease, border 0.3s ease;
-  // background: $dark-green;
-  // color: $text-light;
   text-decoration: none;
   text-align: center;
-  line-height: 1;
+  line-height: 0.9;
   @include font-size($x-large-font-size);
   padding: $base-unit*2 $base-unit;
   display: flex;
@@ -40,7 +38,6 @@
 
 
   &:hover, &:focus {
-    // outline: 4px solid $border-green;
     background: $block-white;
     border-color: $border-green;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
@@ -60,8 +57,6 @@
     &:nth-child(2) {
       margin: 0 $base-unit;
     }
-
-
   }
 
   .home-ctas--single {
