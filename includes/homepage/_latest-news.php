@@ -1,4 +1,4 @@
-<div class="home-section">
+<div class="content-block">
   <h2 class="home-section__heading">Latest News</h2>
 
   <?php

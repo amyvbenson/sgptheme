@@ -1,4 +1,4 @@
-<div class="home-section home-section--video">
+<div class="content-block home-section--video">
 
   <?php
   $category_posts = sgp_category_posts('video', 1);

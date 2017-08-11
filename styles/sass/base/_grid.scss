@@ -235,17 +235,17 @@
 @include media_query(sm) {
 
   .container {
-    padding: 0 $base-unit*2;
+    padding: 0 $base-unit;
   }
 
   [class*='col-'] {
-    padding-right: $base-unit*2;
-    padding-left: $base-unit*2;
+    padding-right: $base-unit;
+    padding-left: $base-unit;
   }
 
   .row {
-    margin-left: -$base-unit*2;
-    margin-right: -$base-unit*2;
+    margin-left: -$base-unit;
+    margin-right: -$base-unit;
   }
 
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11 {
@@ -407,6 +407,19 @@
 }
 
 @include media_query(md) {
+  .container {
+    padding: 0 $base-unit*2;
+  }
+
+  [class*='col-'] {
+    padding-right: $base-unit*2;
+    padding-left: $base-unit*2;
+  }
+
+  .row {
+    margin-left: -$base-unit*2;
+    margin-right: -$base-unit*2;
+  }
 
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11 {
     float: left;

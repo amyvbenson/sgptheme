@@ -45,6 +45,7 @@ function sgp_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'sgp' ),
+    'footer' => esc_html__( 'Footer', 'sgp' ),
 	) );
 
 	/*
@@ -86,7 +87,7 @@ add_action( 'after_setup_theme', 'sgp_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function sgp_widgets_init() {
-	register_sidebar( array(
+	register_sidebars(1, array(
 		'name'          => esc_html__( 'Sidebar', 'sgp' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'sgp' ),
@@ -95,6 +96,13 @@ function sgp_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+  register_sidebars(1, array(
+    'name'          => esc_html__( 'Footer text', 'sgp' ),
+    'id'            => 'footer-text',
+    'description'   => esc_html__( 'Add widgets here.', 'sgp' ),
+    'before_widget' => '<div class="site-footer__small-print">',
+    'after_widget'  => '</div>'
+  ) );
 }
 add_action( 'widgets_init', 'sgp_widgets_init' );
 
@@ -179,6 +187,39 @@ function svg_icon($icon, $sr_text = '') {
   }
 
   return $svg;
+}
+
+/**
+ * Post author details
+ * From custom fields
+ */
+function post_author($post) {
+  $author_name = get_post_meta($post->ID, 'author', true);
+  $author_title = get_post_meta($post->ID, 'author-title', true);
+  $author_image = get_post_meta($post->ID, 'author-image', true);
+  $author_link = get_post_meta($post->ID, 'author-link', true);
+  $default_img = get_template_directory_uri() . '/images/default-tb.jpg';
+
+  $display_name = $author_name ? $author_name : 'Sheffield Green Party';
+  $img_src = $author_image ? $author_image : $default_img;
+
+  $block = '<div class="post-info__author">';
+  $block .= '<h2>Written by</h2>';
+  $block .= '<div class="post-info__author-inner">';
+  $block .= '<img src="' . $img_src . ' " alt="" />';
+  $block .= '<p>';
+  if ($author_link) {
+    $block .= '<a class="post-info__author-name" href="' . $author_link . '">' . $author_name .'</a>';
+  } else {
+    $block .= '<span class="post-info__author-name">' . $display_name . '</span>';
+  }
+  if ($author_title) :
+    $block .= '<span class="post-info__author-title">' . $author_title . '</span>';
+  endif;
+  $block .= '</p>';
+  $block .= '</div></div>';
+
+  return $block;
 }
 
 /**

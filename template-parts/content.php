@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="page-header">
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -19,29 +19,19 @@
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php //sgp_posted_on(); ?>
-		</div><!-- .entry-meta -->
+			<div class="page-meta">
+				<p class="post__date">
+	        <?php the_time(__('jS', 'default')) ?>  <?php the_time(__('F', 'default')) ?> <?php the_time(__('Y', 'default')) ?>
+				</p>
+			</div>
 		<?php
 		endif; ?>
-	</header><!-- .entry-header -->
+	</header>
 
-	<div class="entry-content">
+	<div class="page-content">
 		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'sgp' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sgp' ),
-				'after'  => '</div>',
-			) );
+			the_content( );
 		?>
-	</div><!-- .entry-content -->
+	</div>
 
-	<footer class="entry-footer">
-		<?php //sgp_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+</article>

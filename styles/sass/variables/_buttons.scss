@@ -1,6 +1,5 @@
-.primary-btn {
+.primary-btn, input[type="submit"] {
   display: inline-block;
-  -webkit-appearance: none;
   border: none;
   background: $dark-green;
   color: $text-light;

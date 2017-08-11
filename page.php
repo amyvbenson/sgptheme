@@ -17,7 +17,7 @@ get_header(); ?>
 	<div class="container">
 
 		<main id="main" class="col-sm-8" role="main">
-			<div class="main-content">
+			<div class="content-block content-block--large">
 				<?php
 				while ( have_posts() ) : the_post();
 

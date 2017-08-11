@@ -5,11 +5,50 @@
 }
 
 .comments__heading {
-  color: $text-green;
-  margin-bottom: 0;
+  @include font-size($large-font-size);
 }
 
 .comments__disclaimer {
   @include font-size($small-font-size);
   font-weight: bold;
+}
+
+.comment-list {
+  list-style: none;
+  margin: 0 0 $base-unit*4 0;
+
+  li {
+    // margin: 0;
+  }
+}
+
+.comment-body {
+  background: $block-light-grey;
+  padding: $base-unit*2;
+  // color: $text-light;
+}
+
+.comment-meta {
+  margin-bottom: $base-unit;
+  @include font-size($small-font-size);
+  display: flex;
+  justify-content: space-between;
+
+  b {
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text-medium;
+  }
+}
+
+.comment-author {
+  margin-bottom: $base-unit/2;
+}
+
+.comment-content {
+  // font-style: italic;
+  color: $text-dark;
 }

@@ -9,32 +9,40 @@
 
 get_header(); ?>
 
-	<div class="container">
+<div class="container">
+
+	<?php
+	while ( have_posts() ) : the_post(); ?>
+
 		<main id="main" class="col-sm-8" role="main">
-			<div class="main-content">
-
+			<div class="content-block content-block--large">
 				<?php
-				while ( have_posts() ) : the_post();
+				get_template_part( 'template-parts/content', get_post_format() );
 
-					get_template_part( 'template-parts/content', get_post_format() );
 
-					the_post_navigation();
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-
-				endwhile; // End of the loop.
+						// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
 				?>
-
 			</div>
 		</main>
-
 		<div class="col-sm-4">
+
+			<div class="post-info content-block">
+				<?php echo post_author($post); ?>
+				<div class="post-info__categories">
+					<?php _e('<h2>Posted in</h2>', 'default' ); the_category(); ?>
+				</div>
+			</div>
+
 			<?php get_sidebar(); ?>
 		</div>
 
-	</div>
+	<?php
+		endwhile; // End of the loop.
+	?>
+
+</div>
 
 <?php get_footer(); ?>

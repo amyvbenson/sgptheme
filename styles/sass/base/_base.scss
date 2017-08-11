@@ -19,6 +19,7 @@ body {
   @include font-size($base-font-size);
   line-height: 1.5;
   background: $body-bg;
+  color: $text-medium;
 }
 
 img {
@@ -42,10 +43,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 h1, h2 {
   font-family: $heading-font;
+  color: $text-dark;
 }
 
 h1 {
   @include font-size($large-font-size);
+  line-height: 1.2;
 }
 
 h2 {
@@ -54,6 +57,7 @@ h2 {
 
 h3, h4, h5, h6 {
   font-weight: bold;
+  color: $text-dark;
 }
 
 ul, ol {
