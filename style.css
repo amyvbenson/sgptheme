@@ -1831,7 +1831,7 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
 .post-preview__body {
   float: left;
   width: 66.66667%;
-  padding: 0 0 0 8px;
+  padding: 0 0 0 12px;
 }
 .post-preview--simple .post-preview__body {
   width: 100%;

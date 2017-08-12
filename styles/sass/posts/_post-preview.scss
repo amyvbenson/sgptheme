@@ -18,7 +18,7 @@
 .post-preview__body {
   float: left;
   width: percentage(2/3);
-  padding: 0 0 0 $base-unit;
+  padding: 0 0 0 $base-unit*1.5;
 
   .post-preview--simple & {
     width: 100%;
@@ -30,8 +30,6 @@
   margin: 0 0 $base-unit/2 0;
   line-height: 1.2;
   @include font-size($base-font-size);
-  // font-family: $heading-font;
-  // font-weight: normal;
 
   a {
     color: $text-dark;
@@ -63,10 +61,6 @@
 
   .post-preview {
     padding: $base-unit*2 0;
-  }
-
-  .post-preview__heading {
-    // @include font-size($medium-font-size);
   }
 
 }
