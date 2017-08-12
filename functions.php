@@ -227,7 +227,7 @@ function post_author($post) {
   $default_img = get_template_directory_uri() . '/images/default-tb.jpg';
 
   $display_name = $author_name ? $author_name : 'Sheffield Green Party';
-  $img_src = $author_image ? get_site_url() . '/wp-content/uploads/' . $author_image : $default_img;
+  $img_src = $author_image ? $author_image : $default_img;
 
   $block = '<div class="post-info__author">';
   $block .= '<h2>Written by</h2>';
