@@ -26,4 +26,4 @@
 </head>
 <body <?php body_class(); ?>>
 <div hidden aria-hidden="true"><?php get_template_part( 'images/icons/symbol-defs.svg' ); ?></div>
-<?php include(TEMPLATEPATH . '/includes/_site-header.php'); ?>
+<?php get_template_part( 'template-parts/site-header'); ?>
