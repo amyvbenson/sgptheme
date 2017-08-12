@@ -82,3 +82,13 @@ a.post-info__author-name {
   display: block;
   @include font-size($small-font-size);
 }
+
+@include media-query(xs) {
+
+  .page-content {
+    img.alignright, img.alignleft {
+      max-width: 50%;
+    }
+  }
+
+}

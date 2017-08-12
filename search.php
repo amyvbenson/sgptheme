@@ -47,7 +47,6 @@ get_header(); ?>
 	</main>
 	<div class="col-sm-4">
 		<?php get_template_part( 'template-parts/sidebar/news-archive-link'); ?>
-		<?php get_sidebar(); ?>
 	</div>
 </div>
 
