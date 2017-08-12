@@ -2,13 +2,13 @@
   <h2 class="home-section__heading">Latest News</h2>
 
   <?php
-    $category_posts = sgp_category_posts('featured', 3);
+    $category_posts = sgp_featured_news(3);
     while($category_posts->have_posts()) : $category_posts->the_post();
       get_template_part( 'template-parts/posts/post-preview');
     endwhile; ?>
 
   <?php
-    $secondary_news_posts = sgp_category_posts('featured', 3, 3);
+    $secondary_news_posts = sgp_featured_news(3, 3);
     while($secondary_news_posts->have_posts()) : $secondary_news_posts->the_post();
       get_template_part( 'template-parts/posts/post-preview-simple');
     endwhile; ?>

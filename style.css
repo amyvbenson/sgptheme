@@ -2020,20 +2020,20 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
   font-weight: normal;
 }
 
-.widget_recent_entries ul {
+.widget_recent_entries ul, .widget_listcategorypostswidget ul {
   list-style: none;
   margin: 0;
   line-height: 1.3;
 }
-.widget_recent_entries li {
+.widget_recent_entries li, .widget_listcategorypostswidget li {
   margin-bottom: 16px;
 }
-.widget_recent_entries li:last-child {
+.widget_recent_entries li:last-child, .widget_listcategorypostswidget li:last-child {
   margin-bottom: 8px;
 }
-.widget_recent_entries a {
+.widget_recent_entries a, .widget_listcategorypostswidget a {
   text-decoration: none;
 }
-.widget_recent_entries a:hover, .widget_recent_entries a:focus {
+.widget_recent_entries a:hover, .widget_recent_entries a:focus, .widget_listcategorypostswidget a:hover, .widget_listcategorypostswidget a:focus {
   border-bottom: 1px solid;
 }

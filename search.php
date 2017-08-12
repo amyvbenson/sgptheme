@@ -17,8 +17,13 @@ get_header(); ?>
 			if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'sgp' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-				</header><!-- .page-header -->
+					<h1 class="">Search results</h1>
+				</header>
+				<?php if (get_search_query()): ?>
+					<h2>
+					Searching for: <?php echo get_search_query(); ?>
+					</h2>
+				<?php endif; ?>
 
 				<?php
 				/* Start the Loop */

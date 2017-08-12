@@ -162,6 +162,20 @@ function sgp_category_posts($category_slug, $num_posts, $offset = 0) {
 }
 
 /**
+ * Get homepage latest news
+ * posts that have categories featured and news
+ */
+function sgp_featured_news($num_posts, $offset = 0) {
+  global $post;
+  $args = array(
+    'posts_per_page' => $num_posts,
+    'offset' => $offset,
+    'category__and' => array( 3, 10 )
+  );
+  return new WP_Query( $args);
+}
+
+/**
  * Use first image from post if no thumbnail
  * Source: https://css-tricks.com/snippets/wordpress/get-the-first-image-from-a-post/
  */
