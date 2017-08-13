@@ -296,12 +296,10 @@ function sgp_auto_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'sgp_auto_excerpt_more' );
 
 /**
- * Reduce the default cache time from one day to one hour.
+ * Add theme support for the Eventbrite API plugin.
+ * See: https://wordpress.org/plugins/eventbrite-api/
  */
-function eventbrite_api_cache_one_hour() {
-  return HOUR_IN_SECONDS;
-}
-add_filter( 'eventbrite_cache_expiry', 'eventbrite_api_cache_one_hour' );
+ add_theme_support( 'eventbrite' );
 
 /**
  * Implement the Custom Header feature.

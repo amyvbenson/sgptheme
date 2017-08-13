@@ -49,7 +49,7 @@ get_header(); ?>
   </main>
 
   <div class="col-sm-4">
-    <?php get_sidebar(); ?>
+    <?php get_template_part( 'template-parts/sidebar/', 'none' ); ?>
   </div>
 
 </div>
