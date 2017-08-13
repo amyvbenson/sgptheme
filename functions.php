@@ -296,6 +296,14 @@ function sgp_auto_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'sgp_auto_excerpt_more' );
 
 /**
+ * Reduce the default cache time from one day to one hour.
+ */
+function eventbrite_api_cache_one_hour() {
+  return HOUR_IN_SECONDS;
+}
+add_filter( 'eventbrite_cache_expiry', 'eventbrite_api_cache_one_hour' );
+
+/**
  * Implement the Custom Header feature.
  */
 // require get_template_directory() . '/inc/custom-header.php';
