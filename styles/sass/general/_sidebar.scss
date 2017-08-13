@@ -19,3 +19,16 @@
     outline: 4px solid $border-green;
   }
 }
+
+.sidebar-block__list {
+  list-style: none;
+  margin: 0 0 $base-unit*2 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.sidebar-block__view-all {
+  margin-bottom: 0;
+}

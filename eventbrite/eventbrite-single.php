@@ -24,7 +24,7 @@ get_header(); ?>
 
               <div class="page-content">
                 <div class="page-meta">
-                  <?php eventbrite_event_meta(); ?>
+                  <p><?php eventbrite_event_meta(); ?></p>
                 </div>
                 <?php the_content(); ?>
                 <?php eventbrite_ticket_form_widget(); ?>

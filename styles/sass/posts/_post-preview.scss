@@ -58,6 +58,11 @@
 }
 
 .post-preview--event {
+
+  .post-preview__image {
+    width: 24%;
+  }
+
   a {
     text-decoration: none;
     color: $text-medium;
