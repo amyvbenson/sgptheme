@@ -129,30 +129,6 @@ function sgp_scripts() {
 add_action( 'wp_enqueue_scripts', 'sgp_scripts' );
 
 /**
- * Get child pages for sidebar nav
- */
-function sgp_pages_nav() {
-  global $post;
-
-  if (!$post->post_parent) {
-    $parentpage = get_the_title($post->post_parent);
-    $children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0&depth=1");
-  } else {
-    if ($post->ancestors) {
-      $parentpage = get_the_title(end($post->ancestors));
-      $ancestors = end($post->ancestors);
-      $children = wp_list_pages("title_li=&child_of=".$ancestors."&echo=0&depth=1");
-    }
-  }
-
-  if ($children) {
-    $heading = '<h2 class="pages-nav__heading"><a href="' . get_permalink($parentpage) . '">' . $parentpage . '</a></h2>';
-    $string = '<nav class="pages-nav">' . $heading . '<ul class="pages-nav__list">' . $children . '</ul></nav>';
-  }
-  return $string;
-}
-
-/**
  * Get post from a specific category
  */
 function sgp_category_posts($category_slug, $num_posts, $offset = 0) {

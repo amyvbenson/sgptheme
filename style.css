@@ -1632,56 +1632,6 @@ svg.icon {
   line-height: 1.2;
 }
 
-.pages-nav {
-  background: white;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
-  margin: 16px 0;
-}
-
-.pages-nav__heading {
-  color: white;
-  background: #006341;
-  font-family: "bebas-neue", helvetica, arial, sans-serif;
-  padding: 8px 16px;
-  margin: 0;
-}
-.pages-nav__heading a {
-  color: white;
-  text-decoration: none;
-  display: block;
-}
-.pages-nav__heading a:hover, .pages-nav__heading a:focus {
-  text-decoration: underline;
-}
-
-.pages-nav__list {
-  list-style: none;
-  margin: 0;
-  padding: 0 16px;
-}
-.pages-nav__list li {
-  margin: 0;
-  border-bottom: 1px solid #CCC;
-}
-.pages-nav__list li:last-child {
-  border-bottom: none;
-}
-.pages-nav__list a {
-  color: #333;
-  text-decoration: none;
-  padding: 16px 0;
-  display: block;
-  line-height: 1;
-}
-.pages-nav__list a:hover, .pages-nav__list a:focus {
-  text-decoration: underline;
-}
-
-@media only screen and (min-width: 768px) {
-  .pages-nav {
-    margin: 0 0 16px 0;
-  }
-}
 .post-info h2 {
   margin-bottom: 8px;
 }
@@ -2061,4 +2011,45 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
 }
 .widget_recent_entries a:hover, .widget_recent_entries a:focus, .widget_listcategorypostswidget a:hover, .widget_listcategorypostswidget a:focus {
   border-bottom: 1px solid;
+}
+
+.widget_subpages {
+  padding: 0;
+}
+.widget_subpages .widget-title {
+  color: white;
+  background: #006341;
+  font-family: "bebas-neue", helvetica, arial, sans-serif;
+  padding: 8px 16px;
+  margin: 0;
+}
+.widget_subpages .widget-title a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.widget_subpages .widget-title a:hover, .widget_subpages .widget-title a:focus {
+  text-decoration: underline;
+}
+.widget_subpages ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 16px;
+}
+.widget_subpages li {
+  margin: 0;
+  border-bottom: 1px solid #CCC;
+}
+.widget_subpages li:last-child {
+  border-bottom: none;
+}
+.widget_subpages li a {
+  color: #333;
+  text-decoration: none;
+  padding: 16px 0;
+  display: block;
+  line-height: 1;
+}
+.widget_subpages li a:hover, .widget_subpages li a:focus {
+  text-decoration: underline;
 }
