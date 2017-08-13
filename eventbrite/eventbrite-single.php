@@ -19,20 +19,18 @@ get_header(); ?>
 
             <article id="event-<?php the_ID(); ?>" <?php post_class(); ?>>
               <header class="page-header">
-
                 <h1 class="page-title"><?php the_title(); ?></h1>
-
-                <div class="page-meta">
-                  <?php eventbrite_event_meta(); ?>
-                </div><!-- .entry-meta -->
-              </header><!-- .entry-header -->
+              </header>
 
               <div class="page-content">
+                <div class="page-meta">
+                  <?php eventbrite_event_meta(); ?>
+                </div>
                 <?php the_content(); ?>
                 <?php eventbrite_ticket_form_widget(); ?>
-              </div><!-- .entry-content -->
+              </div>
 
-            </article><!-- #post-## -->
+            </article>
 
           <?php endwhile;
 
@@ -49,7 +47,7 @@ get_header(); ?>
   </main>
 
   <div class="col-sm-4">
-    <?php get_template_part( 'template-parts/sidebar/', 'none' ); ?>
+    <?php get_template_part( 'template-parts/sidebar/events'); ?>
   </div>
 
 </div>

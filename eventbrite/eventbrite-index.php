@@ -10,7 +10,9 @@ get_header(); ?>
 <div class="container">
   <main id="main" class="col-sm-8" role="main">
     <div class="content-block content-block--large">
-
+      <header class="page-header">
+        <h1 class="page-title">Events</h1>
+      </header>
       <?php
         // Set up and call our Eventbrite query.
         $events = new Eventbrite_Query( apply_filters( 'eventbrite_query_args', array(
@@ -19,7 +21,7 @@ get_header(); ?>
         if ( $events->have_posts() ) :
           while ( $events->have_posts() ) : $events->the_post(); ?>
 
-          <div class="post-preview">
+          <div class="post-preview post-preview--event">
 
             <div class="post-preview__image">
               <?php if ( get_the_post_thumbnail($post_id) != '' ) {

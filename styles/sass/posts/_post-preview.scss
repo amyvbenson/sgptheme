@@ -57,6 +57,13 @@
   }
 }
 
+.post-preview--event {
+  a {
+    text-decoration: none;
+    color: $text-medium;
+  }
+}
+
 @include media-query(md) {
 
   .post-preview {

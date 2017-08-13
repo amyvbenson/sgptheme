@@ -1868,6 +1868,11 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
   margin-bottom: 0;
 }
 
+.post-preview--event a {
+  text-decoration: none;
+  color: #666;
+}
+
 @media only screen and (min-width: 993px) {
   .post-preview {
     padding: 16px 0;
