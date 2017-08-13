@@ -22,13 +22,12 @@ get_header(); ?>
           <div class="post-preview">
 
             <div class="post-preview__image">
-              <?php if ( has_post_thumbnail() ) { ?>
-                  <?php the_post_thumbnail(array(250,180)) ?>
-                <?php } else { ?>
-                  <?php $cti = catch_that_image(); if(isset($cti)){ ?>
-                <img src="<?php bloginfo('template_url'); ?>/thumb.php?src=<?php echo $cti; ?>&amp;h=180&amp;w=250&amp;q=100&amp;zc=1" alt="" />
-                <?php } ?>
-              <?php } ?>
+              <?php if ( get_the_post_thumbnail($post_id) != '' ) {
+                the_post_thumbnail(array(250,180));
+              } else {
+                echo '<img src="' . catch_that_image() . '" alt="" />';
+              }
+              ?>
             </div>
 
             <div class="post-preview__body">

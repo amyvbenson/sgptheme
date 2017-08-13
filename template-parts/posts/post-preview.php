@@ -7,7 +7,7 @@
     } else {
       echo '<img src="' . catch_that_image() . '" alt="" />';
     }
-  ?>
+    ?>
   </div>
 
   <div class="post-preview__body">
