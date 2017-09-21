@@ -13,7 +13,7 @@
       get_template_part( 'template-parts/posts/post-preview-simple');
     endwhile; ?>
 
-  <a href="/news" class="home-section__more-link primary-btn">
+  <a href="/category/type/news" class="home-section__more-link primary-btn">
     More news
   </a>
 </div>
