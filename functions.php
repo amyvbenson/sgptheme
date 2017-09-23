@@ -7,7 +7,7 @@
  * @package sgp
  */
 
-if ( ! function_exists( 'sgp_setup' ) ) :
+if (! function_exists('sgp_setup')) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -276,6 +276,20 @@ add_filter( 'excerpt_more', 'sgp_auto_excerpt_more' );
  * See: https://wordpress.org/plugins/eventbrite-api/
  */
  add_theme_support( 'eventbrite' );
+
+/**
+ * Get child pages
+ */
+function sgp_child_pages() {
+  global $post;
+  $child_pages_query_args = array(
+    'post_type'   => 'page',
+    'post_parent' => $post->ID,
+    'orderby'     => 'title',
+    'order'       => 'ASC'
+  );
+  return new WP_Query( $child_pages_query_args );
+}
 
 /**
  * Implement the Custom Header feature.

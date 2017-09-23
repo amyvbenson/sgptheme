@@ -74,7 +74,7 @@ TO DO: see if using an external svg sprite would be better.
 2. Add or remove icons
 3. Download the new icon set
 4. Rename the new `symbol-defs.svg` to `symbol-defs.svg.php`
-5. Replace the existing `selection.json` and `symbol-defs.svg.php` in ``sgptheme/images/icons` with the new versions
+5. Replace the existing `selection.json` and `symbol-defs.svg.php` in `sgptheme/images/icons` with the new versions
 
 ### Using icons
 
@@ -83,3 +83,23 @@ Pass in the icon name and (optionally) screen-reader only text.
 ```
 <?php echo svg_icon('menu', 'Menu') ?>
 ```
+
+
+## Image sizes
+
+Post / page thumbnail 500x360px
+
+Author bio thumbnail 200x200px
+
+Portrait 400x430px
+
+
+## Staging
+
+git remote sgpadmin@do.sheffieldgreenparty.org.uk:themes/sgptheme.git
+git push master staging
+
+
+## Related posts
+
+add custom field 'category' to a page to show 5 posts for that category
