@@ -291,6 +291,39 @@ function sgp_child_pages() {
   return new WP_Query( $child_pages_query_args );
 }
 
+
+/**
+ * Comment template
+ * Used as a callback by wp_list_comments() for displaying the comments.
+ */
+function sgp_comment( $comment, $args, $depth ) {
+  $GLOBALS['comment'] = $comment;
+  if ( '' == $comment->comment_type ) {?>
+  <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+    <div class="comment-body">
+      <div class="comment-meta">
+        <span>
+          <strong><?php printf(__('%s'), get_comment_author_link()) ?></strong>
+          says
+        </span>
+
+        <div class="comment-metadata">
+          <?php printf(__('%1$s'), get_comment_date(), get_comment_time()) ?>
+          <?php edit_comment_link( 'Edit', $before, $after ); ?>
+        </div>
+      </div>
+      <?php if ($comment->comment_approved == '0') : ?>
+        <p><em>Your comment is awaiting moderation</em></p>
+      <?php endif; ?>
+      <div class="comment-content">
+        <?php comment_text(); ?>
+      </div>
+    </div>
+    </li>
+  <?php }
+
+}
+
 /**
  * Implement the Custom Header feature.
  */

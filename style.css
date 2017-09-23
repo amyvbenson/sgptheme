@@ -1640,7 +1640,7 @@ a.thumbnail-list__item {
   text-decoration: none;
 }
 a.thumbnail-list__item:hover .thumbnail-list__title, a.thumbnail-list__item:focus .thumbnail-list__title {
-  border-bottom: 1px solid #6AB023;
+  border-color: #6AB023;
 }
 a.thumbnail-list__item:hover .thumbnail-list__image, a.thumbnail-list__item:focus .thumbnail-list__image {
   background: #6AB023;
@@ -1658,6 +1658,7 @@ a.thumbnail-list__item:hover .thumbnail-list__image, a.thumbnail-list__item:focu
   font-size: 1.25rem;
   font-family: "bebas-neue", helvetica, arial, sans-serif;
   line-height: 1.2;
+  border-bottom: 1px solid transparent;
 }
 
 .page-header {

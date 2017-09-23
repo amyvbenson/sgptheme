@@ -14,7 +14,7 @@ a.thumbnail-list__item {
 
   &:hover, &:focus {
     .thumbnail-list__title {
-      border-bottom: 1px solid $border-green;
+      border-color: $border-green;
     }
     .thumbnail-list__image {
       background: $border-green;
@@ -33,4 +33,5 @@ a.thumbnail-list__item {
   @include font-size($medium-font-size);
   font-family: $heading-font;
   line-height: 1.2;
+  border-bottom: 1px solid transparent;
 }
