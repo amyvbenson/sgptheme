@@ -1,0 +1,82 @@
+.campaign-section {
+  margin-bottom: $base-unit*2;
+}
+
+.campaign-ctas {
+
+  ul {
+    list-style: none;
+    margin: $base-unit 0 0 0;
+  }
+
+  li {
+
+  }
+
+  a {
+    background: $block-dark-green;
+    color: $text-light;
+    display: block;
+    text-decoration: none;
+    font-family: $heading-font;
+    @include font-size($medium-font-size);
+    padding: $base-unit $base-unit*2;
+    position: relative;
+
+    &:hover, &:focus {
+      outline: 2px solid $border-green;
+    }
+  }
+
+}
+
+.campaign__key-points {
+  border: 2px solid $border-green;
+  padding: $base-unit*2;
+
+  ol {
+    list-style: none;
+    margin: 0;
+  }
+
+  li {
+    counter-increment: step-counter;
+    position: relative;
+    color: $text-dark;
+    padding-left: $base-unit*4;
+
+    &:before {
+      content: counter(step-counter);
+      position: absolute;
+      text-align: center;
+      display: inline-block;
+      background: $block-dark-grey;
+      color: $text-light;
+      width: $base-unit*3;
+      left: 0;
+      top: 0;
+      font-family: $heading-font;
+    }
+  }
+}
+
+
+@include media-query(sm) {
+
+  .campaign-section {
+    margin-bottom: $base-unit*4;
+
+    h2 {
+      @include font-size($large-font-size);
+    }
+  }
+
+  .campaign-ctas {
+
+    a {
+      display: inline-block;
+    }
+
+  }
+
+}

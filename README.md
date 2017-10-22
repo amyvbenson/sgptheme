@@ -103,3 +103,16 @@ git push master staging
 ## Related posts
 
 add custom field 'category' to a page to show 5 posts for that category
+
+
+## Posts
+
+To appear on homepage: featured, news
+If letter to press also 'letter to press'
+
+if should set author
+custom fields
+author: their name
+author-image: relative path eg /wp-content/uploads/2017/08/douglas-johnson-tb.jpg
+author-link: relative path to the category for their posts eg /category/people/douglas-johnson/
+author-title: eg City Ward Councillor, Sheffield Green Party or just 'Sheffield Green Party' if no official role

@@ -1672,6 +1672,126 @@ a.thumbnail-list__item:hover .thumbnail-list__image, a.thumbnail-list__item:focu
   line-height: 1.2;
 }
 
+.page-banner__title {
+  line-height: 1;
+}
+
+.page-banner__tagline {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-family: "bebas-neue", helvetica, arial, sans-serif;
+  margin: 0;
+  line-height: 1;
+}
+
+@media (max-width: 767px) {
+  .page-banner {
+    background-image: none !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .page-banner {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+  }
+
+  .page-banner__inner {
+    background: rgba(255, 255, 255, 0.6);
+    width: 50%;
+    padding: 16px;
+  }
+
+  .page-banner__title {
+    font-size: 48px;
+    font-size: 3rem;
+    color: #333;
+  }
+
+  .page-banner__tagline {
+    font-size: 32px;
+    font-size: 2rem;
+    color: #333;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .page-banner {
+    height: 360px;
+  }
+
+  .page-banner__inner {
+    width: 40%;
+  }
+
+  .page-banner__title {
+    font-size: 64px;
+    font-size: 4rem;
+  }
+}
+.campaign-section {
+  margin-bottom: 16px;
+}
+
+.campaign-ctas ul {
+  list-style: none;
+  margin: 8px 0 0 0;
+}
+.campaign-ctas a {
+  background: #006341;
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-family: "bebas-neue", helvetica, arial, sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding: 8px 16px;
+  position: relative;
+}
+.campaign-ctas a:hover, .campaign-ctas a:focus {
+  outline: 2px solid #6AB023;
+}
+
+.campaign__key-points {
+  border: 2px solid #6AB023;
+  padding: 16px;
+}
+.campaign__key-points ol {
+  list-style: none;
+  margin: 0;
+}
+.campaign__key-points li {
+  counter-increment: step-counter;
+  position: relative;
+  color: #333;
+  padding-left: 32px;
+}
+.campaign__key-points li:before {
+  content: counter(step-counter);
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  background: #333;
+  color: white;
+  width: 24px;
+  left: 0;
+  top: 0;
+  font-family: "bebas-neue", helvetica, arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .campaign-section {
+    margin-bottom: 32px;
+  }
+  .campaign-section h2 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+
+  .campaign-ctas a {
+    display: inline-block;
+  }
+}
 .post-info h2 {
   margin-bottom: 8px;
 }

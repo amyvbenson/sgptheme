@@ -9,6 +9,61 @@
   line-height: 1.2;
 }
 
-.page-content {
+.page-banner__title {
+  line-height: 1;
+}
 
+.page-banner__tagline {
+  @include font-size($medium-font-size);
+  font-family: $heading-font;
+  margin: 0;
+  line-height: 1;
+}
+
+@media (max-width: 767px) {
+  .page-banner {
+    background-image: none!important;
+  }
+}
+
+@include media-query(sm) {
+
+  .page-banner {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+  }
+
+  .page-banner__inner {
+    background: rgba(255,255,255,0.6);
+    width: 50%;
+    padding: $base-unit*2;
+  }
+
+  .page-banner__title {
+    @include font-size($x-large-font-size);
+    color: $text-dark;
+  }
+
+  .page-banner__tagline {
+    @include font-size($large-font-size);
+    color: $text-dark;
+  }
+
+}
+
+@include media-query(md) {
+
+  .page-banner {
+    height: 360px;
+  }
+
+  .page-banner__inner {
+    width: 40%;
+  }
+
+  .page-banner__title {
+    @include font-size($xx-large-font-size);
+  }
 }
