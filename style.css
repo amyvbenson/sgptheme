@@ -1977,6 +1977,12 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
   overflow: hidden;
 }
 
+.related-posts {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px dotted #CCC;
+}
+
 .home-section--video p {
   margin-bottom: 0;
 }
