@@ -52,8 +52,6 @@ get_header(); ?>
           eventbrite_paging_nav( $events );
 
         else : ?>
-          // If no content, include the "No posts found" template.
-          // get_template_part( 'content', 'none' );
           <p><em>There are no events coming up soon, please check back again later.</em></p>
         <?php endif;
 
