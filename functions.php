@@ -106,11 +106,6 @@ function sgp_widgets_init() {
     'before_widget' => '<div class="site-footer__small-print">',
     'after_widget'  => '</div>'
   ) );
-  register_sidebars(1, array(
-    'name'          => esc_html__( 'Category sidebar', 'sgp' ),
-    'id'            => 'category-sidebar',
-    'description'   => esc_html__( 'Add widgets here.', 'sgp' )
-  ) );
 }
 add_action( 'widgets_init', 'sgp_widgets_init' );
 
