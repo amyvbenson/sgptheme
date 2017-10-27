@@ -10,7 +10,7 @@
       <?php endif; ?>
       <p>
         <?php if (get_field('author-link')): ?>
-          <a class="post-info__author-name" href="the_field('author-link')">
+          <a class="post-info__author-name" href="<?php the_field('author-link'); ?>">
             <?php get_field('author-name') ? the_field('author-name') : print('Sheffield Green Party'); ?>
           </a>
         <?php else: ?>
