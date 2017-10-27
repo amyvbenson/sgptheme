@@ -3,6 +3,7 @@
   padding: $base-unit 0;
   border-bottom: 1px solid $border-green;
   position: relative;
+  display: flex;
 
   &:first-of-type {
     padding-top: 0;
@@ -10,14 +11,13 @@
 }
 
 .post-preview__image {
-  float: left;
   width: percentage(1/3);
+  max-width: 160px;
+  flex-shrink: 0;
   line-height: 0;
 }
 
 .post-preview__body {
-  float: left;
-  width: percentage(2/3);
   padding: 0 0 0 $base-unit*1.5;
 
   .post-preview--simple & {

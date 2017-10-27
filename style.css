@@ -1892,6 +1892,9 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
   padding: 8px 0;
   border-bottom: 1px solid #6AB023;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .post-preview:before, .post-preview:after {
   content: " ";
@@ -1905,14 +1908,14 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
 }
 
 .post-preview__image {
-  float: left;
   width: 33.33333%;
+  max-width: 160px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   line-height: 0;
 }
 
 .post-preview__body {
-  float: left;
-  width: 66.66667%;
   padding: 0 0 0 12px;
 }
 .post-preview--simple .post-preview__body {

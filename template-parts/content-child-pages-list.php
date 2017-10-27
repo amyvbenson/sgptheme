@@ -24,6 +24,8 @@
           <div class="post-preview__image">
             <?php if(has_post_thumbnail()): ?>
               <?php the_post_thumbnail(array(250,180)); ?>
+            <?php else: ?>
+              <?php echo '<img src="' . catch_that_image() . '" alt="" />'; ?>
             <?php endif; ?>
           </div>
 
