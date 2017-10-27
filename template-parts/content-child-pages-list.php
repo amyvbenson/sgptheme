@@ -19,22 +19,26 @@
     ?>
     <?php $child_pages = sgp_child_pages();?>
     <?php if ( $child_pages->have_posts() ) :?>
-      <ul class="thumbnail-list">
       <?php while ($child_pages->have_posts()) : $child_pages->the_post(); ?>
-        <li>
-          <a href="<?php the_permalink(); ?>" class="thumbnail-list__item">
+        <div class="post-preview">
+          <div class="post-preview__image">
             <?php if(has_post_thumbnail()): ?>
-              <span class="thumbnail-list__image">
-                <?php the_post_thumbnail(array(60, 60)); ?>
-              </span>
+              <?php the_post_thumbnail(array(250,180)); ?>
             <?php endif; ?>
-            <span class="thumbnail-list__title">
-                <?php the_title(); ?>
-            </span>
-          </a>
-        </li>
+          </div>
+
+          <div class="post-preview__body">
+            <h3 class="post-preview__heading">
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </h3>
+
+            <div class="post-preview__text">
+              <?php the_excerpt(); ?>
+            </div>
+          </div>
+          <a aria-hidden="true" tabindex="-1" class="faux-link" data-faux-link="true" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+        </div>
       <?php endwhile;?>
-      </ul>
       <?php
       endif;
       wp_reset_postdata();

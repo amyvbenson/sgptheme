@@ -65,6 +65,9 @@ function sgp_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+  // Allow excerpts on pages
+  add_post_type_support( 'page', 'excerpt' );
 }
 endif;
 add_action( 'after_setup_theme', 'sgp_setup' );
