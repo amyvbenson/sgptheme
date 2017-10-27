@@ -196,39 +196,6 @@ function svg_icon($icon, $sr_text = '') {
 }
 
 /**
- * Post author details
- * From custom fields
- */
-function post_author($post) {
-  $author_name = get_post_meta($post->ID, 'author', true);
-  $author_title = get_post_meta($post->ID, 'author-title', true);
-  $author_image = get_post_meta($post->ID, 'author-image', true);
-  $author_link = get_post_meta($post->ID, 'author-link', true);
-  $default_img = get_template_directory_uri() . '/images/default-tb.jpg';
-
-  $display_name = $author_name ? $author_name : 'Sheffield Green Party';
-  $img_src = $author_image ? $author_image : $default_img;
-
-  $block = '<div class="post-info__author">';
-  $block .= '<h2>Written by</h2>';
-  $block .= '<div class="post-info__author-inner">';
-  $block .= '<img src="' . $img_src . ' " alt="" />';
-  $block .= '<p>';
-  if ($author_link) {
-    $block .= '<a class="post-info__author-name" href="' . $author_link . '">' . $author_name .'</a>';
-  } else {
-    $block .= '<span class="post-info__author-name">' . $display_name . '</span>';
-  }
-  if ($author_title) :
-    $block .= '<span class="post-info__author-title">' . $author_title . '</span>';
-  endif;
-  $block .= '</p>';
-  $block .= '</div></div>';
-
-  return $block;
-}
-
-/**
  * Override wp-caption too make it responsive
  */
 function responsive_wp_caption($val, $attr, $content = NULL) {
