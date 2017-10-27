@@ -107,8 +107,7 @@ add custom field 'category' to a page to show 5 posts for that category
 
 ## Posts
 
-To appear on homepage: featured, news
-If letter to press also 'letter to press'
+To appear on homepage add category 'featured'. To have it appear as a sticky post at the top of the news on homepage add category 'sticky'
 
 if should set author
 custom fields

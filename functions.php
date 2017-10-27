@@ -144,19 +144,16 @@ function sgp_category_posts($category_slug, $num_posts, $offset = 0) {
  * Get homepage latest news
  * posts that have categories featured and news
  */
-function sgp_featured_news($num_posts, $offset = 0) {
+function sgp_featured_posts($num_posts, $offset = 0) {
   global $post;
 
   $featured_slug = 'featured';
   $featured_cat = get_category_by_slug($featured_slug);
-  $news_slug = 'news';
-  $news_cat = get_category_by_slug($news_slug);
-
 
   $args = array(
     'posts_per_page' => $num_posts,
     'offset' => $offset,
-    'category__and' => array( $featured_cat->term_id, $news_cat->term_id )
+    'category__and' => array( $featured_cat->term_id )
   );
   return new WP_Query( $args);
 }
