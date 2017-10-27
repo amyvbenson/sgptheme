@@ -327,15 +327,14 @@ function sgp_comment( $comment, $args, $depth ) {
 /**
  * Exclude categories by slug from post categories list
  */
-function sgp_exclude_post_categories($excl = '') {
+function sgp_exclude_post_categories($exclude) {
+  global $post;
   $categories = get_the_category($post->ID);
   if (!empty($categories)) {
-    $exclude = $excl;
-    $exclude = explode(",", $exclude);
     $html = '<ul>';
     foreach ($categories as $cat) {
-      $catname = trim(strip_tags($cat_name));
-      if (!in_array($cat->slug, $exclude)) {
+      $catname = trim(strip_tags($cat->slug));
+      if (!in_array($catname, $exclude)) {
         $html .= '<li><a href="' . get_category_link($cat->cat_ID) . '" ';
         $html .= '>' . $cat->cat_name . '</a></li>';
       }
@@ -352,8 +351,10 @@ function sgp_category_ids($slugs) {
   $cats_array = array();
   foreach ($slugs as $slug) {
     $category = get_category_by_slug($slug);
-    $cat_id = $category->term_id;
-    array_push($cats_array, $cat_id);
+    if ($category) {
+      $cat_id = $category->term_id;
+      array_push($cats_array, $cat_id);
+    }
   }
   $cat_str = implode(',', $cats_array);
   return $cat_str;
