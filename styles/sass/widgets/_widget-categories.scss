@@ -6,9 +6,20 @@
     text-transform: uppercase;
   }
 
-  li {
+  li.categories {
+    font-family: $heading-font;
+    color: $text-dark;
+    @include font-size($medium-font-size);
+
+    &> ul {
+      margin-top: $base-unit;
+    }
+  }
+
+  .categories li {
     border-bottom: 1px dotted $border-grey;
     padding-bottom: $base-unit;
+    font-family: $body-font;
   }
 
   a {
@@ -39,6 +50,7 @@
         position: absolute;
         right: $base-unit/2;
         top: -1px;
+        @include font-size($base-font-size);
       }
 
       &:last-child {

@@ -9,8 +9,8 @@ get_header(); ?>
     </main>
     <div class="col-sm-6">
       <?php get_template_part( 'template-parts/sidebar/news-archive-link'); ?>
-      <ul class="widget-holder">
-        <?php dynamic_sidebar( 'category-sidebar' ); ?>
+      <ul class="widget widget_categories">
+        <?php wp_list_categories('exclude='.sgp_category_ids(['sticky', 'featured'])); ?>
       </ul>
     </div>
   </div>

@@ -328,6 +328,41 @@ function sgp_comment( $comment, $args, $depth ) {
 }
 
 /**
+ * Exclude categories by slug from post categories list
+ */
+function sgp_exclude_post_categories($excl = '') {
+  $categories = get_the_category($post->ID);
+  if (!empty($categories)) {
+    $exclude = $excl;
+    $exclude = explode(",", $exclude);
+    $html = '<ul>';
+    foreach ($categories as $cat) {
+      $catname = trim(strip_tags($cat_name));
+      if (!in_array($cat->slug, $exclude)) {
+        $html .= '<li><a href="' . get_category_link($cat->cat_ID) . '" ';
+        $html .= '>' . $cat->cat_name . '</a></li>';
+      }
+    }
+    $html .= '</ul>';
+    echo $html;
+  }
+}
+
+/**
+ * Get category ids in comma seperated string from slugs
+ */
+function sgp_category_ids($slugs) {
+  $cats_array = array();
+  foreach ($slugs as $slug) {
+    $category = get_category_by_slug($slug);
+    $cat_id = $category->term_id;
+    array_push($cats_array, $cat_id);
+  }
+  $cat_str = implode(',', $cats_array);
+  return $cat_str;
+}
+
+/**
  * Implement the Custom Header feature.
  */
 // require get_template_directory() . '/inc/custom-header.php';

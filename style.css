@@ -2083,9 +2083,19 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
   margin: 0;
   text-transform: uppercase;
 }
-.widget_categories li {
+.widget_categories li.categories {
+  font-family: "bebas-neue", helvetica, arial, sans-serif;
+  color: #333;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+.widget_categories li.categories > ul {
+  margin-top: 8px;
+}
+.widget_categories .categories li {
   border-bottom: 1px dotted #CCC;
   padding-bottom: 8px;
+  font-family: sans-serif;
 }
 .widget_categories a {
   text-decoration: none;
@@ -2114,6 +2124,8 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
   position: absolute;
   right: 4px;
   top: -1px;
+  font-size: 16px;
+  font-size: 1rem;
 }
 .widget_categories .children li:last-child:after {
   content: none;

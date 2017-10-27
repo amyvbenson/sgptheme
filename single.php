@@ -32,7 +32,7 @@ get_header(); ?>
 			<div class="post-info content-block">
 				<?php echo post_author($post); ?>
 				<div class="post-info__categories">
-					<?php _e('<h2>Posted in</h2>', 'default' ); the_category(); ?>
+					<?php _e('<h2>Posted in</h2>', 'default' ); sgp_exclude_post_categories('sticky', 'featured');	 ?>
 				</div>
 			</div>
 
