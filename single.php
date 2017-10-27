@@ -19,7 +19,6 @@ get_header(); ?>
 				<?php
 				get_template_part( 'template-parts/content', get_post_format() );
 
-
 						// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
 					comments_template();
@@ -28,15 +27,7 @@ get_header(); ?>
 			</div>
 		</main>
 		<div class="col-sm-4">
-
-			<div class="post-info content-block">
-				<?php echo post_author($post); ?>
-				<div class="post-info__categories">
-					<h2>Posted in</h2>
-					<?php sgp_exclude_post_categories(['sticky', 'featured']); ?>
-				</div>
-			</div>
-
+			<?php get_template_part( 'template-parts/sidebar/post-author' ); ?>
 			<?php get_sidebar(); ?>
 		</div>
 

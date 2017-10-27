@@ -106,6 +106,15 @@ function sgp_widgets_init() {
     'before_widget' => '<div class="site-footer__small-print">',
     'after_widget'  => '</div>'
   ) );
+  register_sidebars(1, array(
+    'name'          => esc_html__( 'City Ward Blog', 'sgp' ),
+    'id'            => 'city-ward-blog-sidebar',
+    'description'   => esc_html__( 'Add widgets here.', 'sgp' ),
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+  ) );
 }
 add_action( 'widgets_init', 'sgp_widgets_init' );
 
@@ -354,6 +363,17 @@ function sgp_category_ids($slugs) {
   $cat_str = implode(',', $cats_array);
   return $cat_str;
 }
+
+function sgp_get_custom_cat_template($single_template) {
+  global $post;
+  if ( in_category( 'city-ward-blog' )) {
+    $single_template = dirname( __FILE__ ) . '/single-city-ward-blog.php';
+  }
+  return $single_template;
+}
+
+add_filter( 'single_template', 'sgp_get_custom_cat_template' ) ;
+
 
 /**
  * Implement the Custom Header feature.

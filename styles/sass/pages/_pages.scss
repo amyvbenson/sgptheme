@@ -35,6 +35,11 @@
     background-position: right bottom;
   }
 
+  .page-banner--city {
+    background: url('images/city-blog-banner.jpg') left top no-repeat;
+    background-size: 100% auto;
+  }
+
   .page-banner__inner {
     background: rgba(255,255,255,0.6);
     width: 50%;

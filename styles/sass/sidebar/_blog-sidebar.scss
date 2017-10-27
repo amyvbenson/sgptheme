@@ -1,0 +1,37 @@
+.blog-sidebar-header {
+  display: block;
+  background: $dark-green;
+  color: white;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: $base-unit*2;
+  text-decoration: none;
+}
+
+.blog-sidebar-header__content {
+  display: block;
+  padding: $base-unit*2;
+}
+
+.blog-sidebar-header__heading {
+  font-family: $heading-font;
+  @include font-size($large-font-size);
+  line-height: 1;
+}
+
+@include media-query(md) {
+
+  .blog-sidebar-header--city {
+    background: url('images/city-ward-blog.jpg') center top no-repeat;
+    background-size: 100% auto;
+    height: 300px;
+    position: relative;
+  }
+
+  .blog-sidebar-header__content {
+    background: rgba(0, 99, 65, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+}

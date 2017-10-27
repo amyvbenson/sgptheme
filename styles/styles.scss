@@ -30,7 +30,6 @@ Author: Amy Benson
 @import 'sass/general/icons';
 @import 'sass/general/wp-caption';
 @import 'sass/general/responsive-video';
-@import 'sass/general/sidebar';
 @import 'sass/pages/pages';
 @import 'sass/pages/campaign';
 @import 'sass/posts/post';
@@ -39,6 +38,8 @@ Author: Amy Benson
 @import 'sass/posts/related-posts';
 @import 'sass/homepage/homepage';
 @import 'sass/homepage/banner';
+@import 'sass/sidebar/sidebar';
+@import 'sass/sidebar/blog-sidebar';
 @import 'sass/widgets/widget-categories';
 @import 'sass/widgets/widget-recent-entries';
 @import 'sass/widgets/widget-subpages';
