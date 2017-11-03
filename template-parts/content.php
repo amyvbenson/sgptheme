@@ -10,7 +10,11 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<header class="page-header">
+		<?php if (in_category('letters-to-the-press')): ?>
+			<a href="/category/letters-to-the-press/" class="page-header__letters-icon">Letters to the press</a>
+		<?php endif; ?>
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );

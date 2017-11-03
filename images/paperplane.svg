@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>paperplane</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="paperplane" transform="translate(0.000000, -2.000000)">
+                <polygon id="Triangle" fill="#FFFFFF" transform="translate(14.889648, 14.436157) rotate(40.000000) translate(-14.889648, -14.436157) " points="19.0889865 -0.0829169459 18.012205 26.9912215 10.6903104 28.9552314"></polygon>
+                <polygon id="Triangle" fill="#FFFFFF" transform="translate(20.734622, 17.539557) rotate(40.000000) translate(-20.734622, -17.539557) " points="19.4763359 1.33506221 23.6033064 33.7440521 17.8659385 31.3689743"></polygon>
+                <polygon id="Triangle" fill="#FFFFFF" transform="translate(26.584296, 21.029622) rotate(40.000000) translate(-26.584296, -21.029622) " points="19.5779806 8.36446304 33.5906115 30.1725832 23.0136403 33.694781"></polygon>
+                <path d="M31.543,2.16 C31.377,2.053 31.188,2 31,2 C30.807,2 30.613,2.055 30.445,2.168 L0.445,22.168 C0.136,22.373 -0.034,22.734 0.006,23.104 C0.044,23.473 0.284,23.792 0.629,23.928 L8.453,27.059 L12.132,33.497 C12.308,33.806 12.635,33.997 12.989,34.001 L13,34.001 C13.351,34.001 13.677,33.815 13.857,33.515 L15.934,30.052 L25.629,33.929 C25.748,33.977 25.873,34 26,34 C26.17,34 26.338,33.957 26.49,33.871 C26.754,33.723 26.935,33.463 26.986,33.164 L31.986,3.164 C32.051,2.771 31.877,2.377 31.543,2.16 L31.543,2.16 Z M3.136,22.777 L26.311,7.326 L9.461,25.363 C9.372,25.31 9.293,25.24 9.195,25.201 L3.136,22.777 L3.136,22.777 Z M10.189,26.066 C10.187,26.062 10.184,26.06 10.182,26.056 L29.125,5.781 L12.976,30.943 L10.189,26.066 Z M25.217,31.609 L16.676,28.193 C16.473,28.113 16.262,28.086 16.053,28.074 L29.205,7.686 L25.217,31.609 L25.217,31.609 Z" id="Shape" fill="#006341" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -2,6 +2,28 @@
   margin-bottom: $base-unit*3;
 }
 
+.page-header__letters-icon {
+  display: inline-block;
+  background: url('images/paperplane.svg') left center no-repeat;
+  font-family: $heading-font;
+  @include font-size($medium-font-size);
+  padding-left: $base-unit*4.5;
+  margin-bottom: $base-unit*2;
+  text-decoration: none;
+  position: relative;
+
+  &:hover {
+    &:after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid $border-dark-green;
+      width: 138px;
+      bottom: 0;
+      left: 36px;;
+    }
+  }
+}
+
 .page-title {
   border-bottom: 1px solid $border-green;
   margin: 0;

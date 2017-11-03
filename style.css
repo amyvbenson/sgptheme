@@ -1592,6 +1592,26 @@ svg.icon {
   margin-bottom: 24px;
 }
 
+.page-header__letters-icon {
+  display: inline-block;
+  background: url("images/paperplane.svg") left center no-repeat;
+  font-family: "bebas-neue", helvetica, arial, sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding-left: 36px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  position: relative;
+}
+.page-header__letters-icon:hover:after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #006341;
+  width: 138px;
+  bottom: 0;
+  left: 36px;
+}
+
 .page-title {
   border-bottom: 1px solid #6AB023;
   margin: 0;
