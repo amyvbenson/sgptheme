@@ -237,6 +237,14 @@ em {
   font-style: italic;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background: #CCC;
+  width: 90%;
+  margin: 0 auto 16px auto;
+}
+
 @media only screen and (min-width: 450px) {
   img.alignright, .wp-caption.alignright {
     float: right;
