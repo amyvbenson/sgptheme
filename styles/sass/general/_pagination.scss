@@ -1,0 +1,30 @@
+.pagination {
+  margin: $base-unit*2 0;
+
+  .page-numbers {
+    display: inline-block;
+    padding: $base-unit;
+    line-height: 1;
+    min-width: 34px;
+    text-align: center;
+  }
+
+  span.page-numbers {
+    border: 1px solid $border-dark-green;
+    background: $block-dark-green;
+    color: white;
+  }
+
+  a.page-numbers {
+    background: white;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    border: 1px solid $border-green;
+
+    &:hover, &:focus {
+      border: 1px solid $border-dark-green;
+      background: $block-dark-green;
+      color: white;
+    }
+  }
+}

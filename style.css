@@ -1588,6 +1588,33 @@ svg.icon {
   height: 100%;
 }
 
+.pagination {
+  margin: 16px 0;
+}
+.pagination .page-numbers {
+  display: inline-block;
+  padding: 8px;
+  line-height: 1;
+  min-width: 34px;
+  text-align: center;
+}
+.pagination span.page-numbers {
+  border: 1px solid #006341;
+  background: #006341;
+  color: white;
+}
+.pagination a.page-numbers {
+  background: white;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  border: 1px solid #6AB023;
+}
+.pagination a.page-numbers:hover, .pagination a.page-numbers:focus {
+  border: 1px solid #006341;
+  background: #006341;
+  color: white;
+}
+
 .page-header {
   margin-bottom: 24px;
 }
