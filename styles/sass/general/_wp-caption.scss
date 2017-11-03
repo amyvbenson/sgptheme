@@ -8,3 +8,13 @@
   @include font-size($small-font-size);
   font-weight: bold;
 }
+
+@include media-query(sm) {
+
+  .wp-caption {
+    &.alignright, &.alignleft {
+      max-width: 50%!important; // to overrule inline style
+    }
+  }
+
+}

@@ -1574,6 +1574,11 @@ svg.icon {
   font-weight: bold;
 }
 
+@media only screen and (min-width: 768px) {
+  .wp-caption.alignright, .wp-caption.alignleft {
+    max-width: 50% !important;
+  }
+}
 .responsive-video {
   position: relative;
   padding-bottom: 56.25%;
