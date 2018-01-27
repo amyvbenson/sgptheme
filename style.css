@@ -1329,19 +1329,31 @@ button, input[type="submit"] {
   .site-header__social {
     display: block;
     position: absolute;
-    top: 24px;
+    top: 16px;
     right: 32px;
   }
   .site-header__social a {
     display: inline-block;
     text-decoration: none;
     margin-left: 12px;
+    background: transparent;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 36px;
+    transition: background 0.3s ease;
   }
   .site-header__social a:hover, .site-header__social a:focus {
-    opacity: 0.6;
+    background: white;
+  }
+  .site-header__social a:hover svg, .site-header__social a:focus svg {
+    fill: #6AB023;
   }
   .site-header__social svg {
     fill: white;
+    transition: fill 0.3s ease;
+    vertical-align: middle;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1354,7 +1366,7 @@ button, input[type="submit"] {
   }
 
   .site-header__social {
-    top: 40px;
+    top: 32px;
   }
 }
 .site-nav {

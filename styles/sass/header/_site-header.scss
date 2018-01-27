@@ -66,21 +66,35 @@
   .site-header__social {
     display: block;
     position: absolute;
-    top: $base-unit*3;
+    top: $base-unit*2;
     right: $base-unit*4;
 
     a {
       display: inline-block;
       text-decoration: none;
       margin-left: $base-unit*1.5;
+      background: transparent;
+      width: $base-unit*4.5;
+      height: $base-unit*4.5;
+      border-radius: 100%;
+      text-align: center;
+      line-height: $base-unit*4.5;
+      transition: background 0.3s ease;
 
-      &:hover, &:focus {
-        opacity: 0.6;
+      &:hover,
+      &:focus {
+        background: white;
+
+        svg {
+          fill: $gp-green;
+        }
       }
     }
 
     svg {
       fill: white;
+      transition: fill 0.3s ease;
+      vertical-align: middle;
     }
   }
 
@@ -97,7 +111,7 @@
   }
 
   .site-header__social {
-    top: $base-unit*5;
+    top: $base-unit*4;
   }
 
 }
