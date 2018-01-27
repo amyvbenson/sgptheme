@@ -11,7 +11,7 @@ get_header(); ?>
 
 <div class="container">
   <main id="main" class="col-sm-8" role="main">
-    <div class="content-block">
+    <div class="content-block content-block--large">
 
 			<?php
 			if ( have_posts() ) : ?>
