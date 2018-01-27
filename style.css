@@ -1983,6 +1983,11 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
   border-bottom: 1px solid #6AB023;
 }
 
+h2.post-preview__heading {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
 .post-preview__date {
   padding: 0;
   font-size: 12px;

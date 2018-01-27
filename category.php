@@ -8,10 +8,13 @@ get_header(); ?>
       </div>
     </main>
     <div class="col-sm-6">
+      <div class="widget widget_categories">
+        <h2>Categories</h2>
+        <ul>
+          <?php wp_list_categories('exclude='.sgp_category_ids(['sticky', 'featured']).'&title_li='); ?>
+        </ul>
+      </div>
       <?php get_template_part( 'template-parts/sidebar/news-archive-link'); ?>
-      <ul class="widget widget_categories">
-        <?php wp_list_categories('exclude='.sgp_category_ids(['sticky', 'featured'])); ?>
-      </ul>
     </div>
   </div>
 
