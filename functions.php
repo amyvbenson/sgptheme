@@ -122,6 +122,8 @@ add_action( 'widgets_init', 'sgp_widgets_init' );
  * Enqueue scripts and styles.
  */
 function sgp_scripts() {
+  wp_deregister_script( 'jquery' );
+  wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
   wp_enqueue_style( 'sgp-style', get_stylesheet_uri() );
   wp_enqueue_script('jquery');
   wp_enqueue_script( 'sgp-nav', get_template_directory_uri() . '/js/nav.js', array(), '20151215', true );
