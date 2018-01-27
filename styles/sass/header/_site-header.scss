@@ -1,6 +1,7 @@
 .site-header {
   background: $gp-green;
   margin-bottom: $base-unit*2;
+  position: relative;
 }
 
 .site-header__top {
@@ -9,8 +10,6 @@
 
 .site-header__logo {
   width: 200px;
-  // width: 80%;
-  // max-width: 220px;
   display: block;
   line-height: 0;
   padding: $base-unit*2 0;
@@ -25,7 +24,7 @@
   padding: 0;
   -webkit-appearance: none;
   position: absolute;
-  top: $base-unit*1.5;
+  top: 10px;
   right: $base-unit*2;
 
   svg.icon {
@@ -34,26 +33,10 @@
     height: $base-unit*4;
     vertical-align: middle;
   }
-
-  .admin-bar & {
-    top: $base-unit*7;
-  }
 }
 
 .site-header__social {
   display: none;
-}
-
-@include media-query (xs) {
-
-  .site-header__logo {
-    // max-width: 360px;
-  }
-
-  .site-header__toggle-nav {
-    top: $base-unit*2.5;
-  }
-
 }
 
 @include media-query (sm) {
@@ -72,8 +55,6 @@
 
   .site-header__logo {
     width: 380px;
-    // width: 50%;
-    // max-width: 600px;
     margin: 0 auto;
     padding: $base-unit*1.5 0;
   }

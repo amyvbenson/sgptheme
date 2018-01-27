@@ -1260,6 +1260,7 @@ button, input[type="submit"] {
 .site-header {
   background: #6AB023;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .site-header__top {
@@ -1282,7 +1283,7 @@ button, input[type="submit"] {
   padding: 0;
   -webkit-appearance: none;
   position: absolute;
-  top: 12px;
+  top: 10px;
   right: 16px;
 }
 .site-header__toggle-nav svg.icon {
@@ -1291,19 +1292,11 @@ button, input[type="submit"] {
   height: 32px;
   vertical-align: middle;
 }
-.admin-bar .site-header__toggle-nav {
-  top: 56px;
-}
 
 .site-header__social {
   display: none;
 }
 
-@media only screen and (min-width: 450px) {
-  .site-header__toggle-nav {
-    top: 20px;
-  }
-}
 @media only screen and (min-width: 768px) {
   .site-header {
     margin-bottom: 32px;
