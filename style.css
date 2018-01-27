@@ -241,7 +241,6 @@ hr {
   border: 0;
   height: 1px;
   background: #CCC;
-  width: 90%;
   margin: 0 auto 16px auto;
 }
 
@@ -1675,6 +1674,9 @@ svg.icon {
   .page-banner {
     background-image: none !important;
   }
+  .page-banner.page-banner--no-content {
+    display: none;
+  }
 }
 @media only screen and (min-width: 768px) {
   .page-banner {
@@ -1940,7 +1942,7 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
 }
 
 .post-preview__image {
-  width: 33.33333%;
+  width: 33.3333333333%;
   max-width: 160px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -2076,7 +2078,7 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
   }
 
   .home-ctas__cta {
-    width: 33.33333%;
+    width: 33.3333333333%;
     margin-bottom: 0;
   }
   .home-ctas__cta:nth-child(2) {

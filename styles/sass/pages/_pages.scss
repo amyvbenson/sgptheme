@@ -45,6 +45,10 @@
 @media (max-width: 767px) {
   .page-banner {
     background-image: none!important;
+
+    &.page-banner--no-content {
+      display: none;
+    }
   }
 }
 
