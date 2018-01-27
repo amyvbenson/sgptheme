@@ -63,6 +63,7 @@ get_header(); ?>
   </main>
 
   <div class="col-sm-4">
+    <?php dynamic_sidebar('events-sidebar'); ?>
     <?php get_sidebar(); ?>
   </div>
 </div>
