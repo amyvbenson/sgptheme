@@ -89,6 +89,13 @@ Author: Amy Benson
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+.sr-only.sr-only--focusable:focus, .screen-reader-text.sr-only--focusable:focus {
+  clip: auto;
+  height: auto;
+  width: auto;
+  z-index: 1;
+  background: white;
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

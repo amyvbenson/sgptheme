@@ -1,4 +1,4 @@
-<a class="skip-link sr-only" href="#main">Skip to content</a>
+<a class="skip-link sr-only sr-only--focusable" href="#main">Skip to content</a>
 <header role="banner" class="site-header">
   <div class="container container--no-children site-header__top">
 
