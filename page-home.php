@@ -6,46 +6,12 @@
 
 get_header(); ?>
 
-  <main id="main" role="main">
-
-  <!-- <div class="container">
-
-    <div class="col-xs-12">
-      <div class="home-banner">
-      </div>
+  <main id="main" role="main" class="container">
+    <div class="col-sm-12">
+      <div class="homepage-content">
+        <?php get_template_part( 'template-parts/homepage/latest-news'); ?>
+        <?php get_template_part( 'template-parts/homepage/ctas'); ?>
     </div>
-
-  </div> -->
-
-  <div class="container">
-    <div class="col-sm-6" >
-      <?php get_template_part( 'template-parts/homepage/latest-news'); ?>
-    </div>
-
-    <div class="col-sm-6">
-      <div class="home-ctas">
-        <a href="https://my.greenparty.org.uk/civicrm/membership/joining" class="home-ctas__cta">
-          Join
-        </a>
-
-        <a href="/about-us/donate" class="home-ctas__cta">
-          Donate
-        </a>
-
-        <a href="#" class="home-ctas__cta">
-          Get Involved
-        </a>
-      </div>
-      <?php get_template_part( 'template-parts/homepage/latest-video'); ?>
-      <div class="home-ctas home-ctas--single">
-        <a href="http://shop.sheffieldgreenparty.org.uk/" class="home-ctas__cta">
-          Visit our shop
-        </a>
-      </div>
-
-    </div>
-  </div>
-
   </main>
 
 <?php get_footer(); ?>

@@ -3,7 +3,7 @@
   <div class="post-preview__image">
     <?php
     if ( get_the_post_thumbnail($post_id) != '' ) {
-      the_post_thumbnail(array(250,180));
+      the_post_thumbnail(array(300,216));
     } else {
       echo '<img src="' . catch_that_image() . '" alt="" />';
     }
@@ -26,9 +26,7 @@
       </h3>
     <?php endif; ?>
 
-    <?php if ( !is_front_page() ) { ?>
-      <p class="post-preview__date"><?php the_time(__('jS F Y', 'default')) ?></p>
-    <?php } ?>
+    <p class="post-preview__date"><?php the_time(__('jS F Y', 'default')) ?></p>
 
     <div class="post-preview__text">
       <?php the_excerpt(); ?>

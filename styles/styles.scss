@@ -16,6 +16,7 @@ Author: Amy Benson
 @import 'sass/mixins/media-query';
 @import 'sass/mixins/clearfix';
 @import 'sass/mixins/font-size';
+@import 'sass/mixins/grid-fallback';
 @import 'sass/variables/buttons';
 @import 'sass/helpers/sr-only';
 @import 'sass/base/reset';
@@ -37,7 +38,9 @@ Author: Amy Benson
 @import 'sass/posts/comments';
 @import 'sass/posts/post-preview';
 @import 'sass/posts/related-posts';
-@import 'sass/homepage/homepage';
+@import 'sass/homepage/content';
+@import 'sass/homepage/ctas';
+@import 'sass/homepage/latest-news';
 @import 'sass/homepage/banner';
 @import 'sass/sidebar/sidebar';
 @import 'sass/sidebar/blog-sidebar';
