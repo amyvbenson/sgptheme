@@ -19,6 +19,8 @@
 
 .post-preview__body {
   padding: 0 0 0 $base-unit*1.5;
+  max-width: 100%;
+  flex-shrink: 1;
 
   .post-preview--simple & {
     width: 100%;

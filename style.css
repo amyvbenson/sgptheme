@@ -1267,6 +1267,9 @@ input.search-submit {
 
 .post-preview__body {
   padding: 0 0 0 12px;
+  max-width: 100%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
 }
 
 .post-preview--simple .post-preview__body {
