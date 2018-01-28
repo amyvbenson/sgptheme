@@ -278,11 +278,6 @@ hr {
   padding: 0 8px;
 }
 
-[class*='col-'] {
-  position: relative;
-  width: 100%;
-}
-
 .row:before, .row:after {
   content: " ";
   display: table;
