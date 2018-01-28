@@ -96,7 +96,7 @@ hr {
   margin: 0 auto $base-unit*2 auto;
 }
 
-@include media-query(xs) {
+@include media-query(sm) {
 
   img.alignright, .wp-caption.alignright {
     float: right;

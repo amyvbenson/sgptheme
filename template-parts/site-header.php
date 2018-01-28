@@ -13,7 +13,7 @@
     <?php endif; ?>
 
     <div class="site-header__social">
-      <a href="http://www.facebook.com/pages/Sheffield-Green-Party/">
+      <a href="https://www.facebook.com/SheffieldGreenParty/">
         <?php echo svg_icon('facebook', 'Facebook') ?>
       </a>
       <a href="http://twitter.com/sheffieldgreens">

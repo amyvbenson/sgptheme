@@ -242,7 +242,7 @@ hr {
   margin: 0 auto 16px auto;
 }
 
-@media (min-width: 0) {
+@media (min-width: 576px) {
   img.alignright, .wp-caption.alignright {
     float: right;
     margin: 0 0 16px 16px;

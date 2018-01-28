@@ -19,7 +19,7 @@
         <div class="col-xs-12 col-md-4">
           <h2>Connect with us:</h2>
           <div class="site-footer__social">
-            <a href="http://www.facebook.com/pages/Sheffield-Green-Party/">
+            <a href="https://www.facebook.com/SheffieldGreenParty/">
               <?php echo svg_icon('facebook', 'Facebook') ?>
             </a>
             <a href="http://twitter.com/sheffieldgreens">
