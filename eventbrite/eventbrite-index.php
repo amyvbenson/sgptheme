@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <div class="container">
-  <main id="main" class="col-sm-8" role="main">
+  <main id="main" class="col-md-8" role="main">
     <div class="content-block content-block--large">
       <header class="page-header">
         <h1 class="page-title">Events</h1>
@@ -62,7 +62,7 @@ get_header(); ?>
     </div>
   </main>
 
-  <div class="col-sm-4">
+  <div class="col-md-4">
     <?php dynamic_sidebar('events-sidebar'); ?>
     <?php get_sidebar(); ?>
   </div>

@@ -52,7 +52,7 @@
   }
 }
 
-@include media-query(sm) {
+@include media-query(md) {
 
   .page-banner {
     height: 300px;
@@ -84,7 +84,7 @@
 
 }
 
-@include media-query(md) {
+@include media-query(lg) {
 
   .page-banner {
     height: 360px;

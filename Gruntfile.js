@@ -2,29 +2,31 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    sass: {
-      dev: {
-        options: {
-          sourcemap: 'auto',
-          style: 'expanded'
-        },
-        files: {
-          'style.css': 'styles/styles.scss'
-        }
-        
-      },
+    path: 'styles/',
+    sass_import: {
       dist: {
-        options: {
-          sourcemap: 'none',
-          style: 'compressed'
-        },
         files: {
-          'style.css': 'styles/styles.scss'
+          '<%= path %>styles.scss': [
+            '<%= path %>sass/variables/*.scss',
+            '<%= path %>sass/mixins/*.scss',
+            '<%= path %>sass/base/*.scss',
+            '<%= path %>sass/helpers/*.scss',
+            '<%= path %>sass/components/**/*.scss',
+          ]
         }
-        
       }
     },
-
+    sass: {
+      dist: {
+        options: {
+          sourceMap: true,
+          outputStyle: 'expanded'
+        },
+        files: {
+          'style.css': '<%= path %>styles.scss'
+        }
+      }
+    },
     autoprefixer: {
       dist: {
         files: {
@@ -32,21 +34,18 @@ module.exports = function(grunt) {
         }
       }
     },
-
     watch: {
       sass: {
-        files: 'styles/**/*.scss',
-        tasks: ['sass:dev', 'autoprefixer']
+        files: '<%= path %>**/*.scss',
+        tasks: ['sass_import', 'sass', 'autoprefixer'],
+        options: {
+          spawn: false,
+        }
       }
     }
 
   });
 
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-autoprefixer');
-
-  grunt.registerTask('default', ['sass:dev', 'autoprefixer']);
-  grunt.registerTask('dist', ['sass:dist', 'autoprefixer']);
-
+  require('load-grunt-tasks')(grunt);
+  grunt.registerTask('default', ['sass_import','sass', 'autoprefixer']);
 };

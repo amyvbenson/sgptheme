@@ -40,7 +40,7 @@
   margin: 0;
 }
 
-@include media-query(sm) {
+@include media-query(md) {
 
   .site-nav {
     text-align: center;
@@ -72,14 +72,14 @@
 
 }
 
-@include media-query(md) {
+@include media-query(lg) {
 
   .menu-item {
     margin: 0 $base-unit/4;
   }
 }
 
-@include media-query(lg) {
+@include media-query(xl) {
 
   .menu-item {
     margin: 0 $base-unit/2;

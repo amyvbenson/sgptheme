@@ -39,7 +39,7 @@
   display: none;
 }
 
-@include media-query (sm) {
+@include media-query (md) {
 
   .site-header {
     margin-bottom: $base-unit*4;

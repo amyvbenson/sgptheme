@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div class="container">
 		<?php get_template_part( 'template-parts/pages/hero-image' ); ?>
-		<main id="main" class="col-sm-8" role="main">
+		<main id="main" class="col-md-8" role="main">
 			<div class="content-block content-block--large">
 				<?php
 					get_template_part( 'template-parts/content', 'none' );
@@ -19,7 +19,7 @@ get_header(); ?>
 			</div>
 		</main>
 
-		<div class="col-sm-4">
+		<div class="col-md-4">
 			<?php get_sidebar(); ?>
 		</div>
 

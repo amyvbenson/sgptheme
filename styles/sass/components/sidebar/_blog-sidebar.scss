@@ -18,7 +18,7 @@
   line-height: 1;
 }
 
-@include media-query(md) {
+@include media-query(lg) {
 
   .blog-sidebar-header--city {
     background: url('images/city-ward-blog.jpg') center top no-repeat;

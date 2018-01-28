@@ -21,7 +21,7 @@ input.search-submit {
   border: none;
 }
 
-@include media-query(sm) {
+@include media-query(md) {
 
   .search-form {
     display: inline-block;
@@ -31,7 +31,7 @@ input.search-submit {
 
 }
 
-@include media-query(md) {
+@include media-query(lg) {
 
   .search-form {
     margin: 0 $base-unit*2;

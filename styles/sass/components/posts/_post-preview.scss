@@ -74,7 +74,7 @@ h2.post-preview__heading {
   }
 }
 
-@include media-query(md) {
+@include media-query(lg) {
 
   .post-preview {
     padding: $base-unit*2 0;

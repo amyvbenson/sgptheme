@@ -19,7 +19,7 @@ ul.content-block, ul.widget, .sidebar-block__list {
   margin: 0;
 }
 
-@include media-query(sm) {
+@include media-query(md) {
 
   .content-block--large {
     padding: $base-unit*4;

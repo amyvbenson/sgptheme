@@ -6,8 +6,7 @@ Based on http://underscores.me/
 
 ### Running WordPress locally
 
-Follow the instructions at https://github.com/Varying-Vagrant-Vagrants/VVV#installation for installing Varying Vagrant Vagrants (VVV).
-
+TO DO
 
 ### Install Grunt:
 
@@ -15,19 +14,11 @@ Follow the instructions at https://github.com/Varying-Vagrant-Vagrants/VVV#insta
 npm install -g grunt-cli
 ```
 
-### Installing Sass:
-
-Sass requires Ruby. If you're on OS X or Linux you probably already have Ruby installed; test with ruby -v in your terminal. When you've confirmed you have Ruby installed, run gem install sass to install Sass. Use http://rubyinstaller.org/ to install Ruby on Windows.
-
-```
-gem install sass
-```
-
 ### Install this theme
 
-Clone this repo into `www/wordpress-default/wp-config/themes` (this path may be differenet if you're using multi-site locally).
+Clone this repo into `www/wordpress-default/wp-config/themes`.
 
-In the Wordpress Admin (`/wp-admin`) go to `Appearance > Themes` and activate `Sheffield Green Party Theme`
+In the Wordpress Admin (`/wp-admin`) go to `Appearance > Themes` and activate `sgptheme`
 
 ### Enable JetPack locally
 
@@ -52,14 +43,6 @@ To watch for changes and recompile:
 
 ```
 grunt watch
-```
-
-### Production
-
-To compile the CSS for production (compresses and no sourcemap) run:
-
-```
-grunt dist
 ```
 
 ## Icons
@@ -97,7 +80,7 @@ Portrait 400x430px
 ## Staging
 
 git remote sgpadmin@do.sheffieldgreenparty.org.uk:themes/sgptheme.git
-git push master staging
+git push staging master
 
 
 ## Related posts

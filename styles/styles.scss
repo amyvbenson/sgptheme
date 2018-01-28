@@ -1,49 +1,39 @@
-/*!
-Theme Name: Sheffield Green Party Theme
-Theme URI: http://www.sheffieldgreenparty.org.uk/
-Description: Sheffield Green Party Website theme
-Version: 0.1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: sheffieldgreens
-Author: Amy Benson
-*/
-
-@import 'sass/variables/colors';
-@import 'sass/variables/fonts';
-@import 'sass/variables/font-sizes';
-@import 'sass/variables/measurements';
-@import 'sass/mixins/media-query';
-@import 'sass/mixins/clearfix';
-@import 'sass/mixins/font-size';
-@import 'sass/mixins/grid-fallback';
-@import 'sass/variables/buttons';
-@import 'sass/helpers/sr-only';
-@import 'sass/base/reset';
-@import 'sass/base/base';
-@import 'sass/base/grid';
-@import 'sass/forms/generic-form-styles';
-@import 'sass/header/site-header';
-@import 'sass/header/site-nav';
-@import 'sass/header/search-form';
-@import 'sass/footer/site-footer';
-@import 'sass/general/layout';
-@import 'sass/general/icons';
-@import 'sass/general/wp-caption';
-@import 'sass/general/responsive-video';
-@import 'sass/general/pagination';
-@import 'sass/pages/pages';
-@import 'sass/pages/campaign';
-@import 'sass/posts/post';
-@import 'sass/posts/comments';
-@import 'sass/posts/post-preview';
-@import 'sass/posts/related-posts';
-@import 'sass/homepage/content';
-@import 'sass/homepage/ctas';
-@import 'sass/homepage/latest-news';
-@import 'sass/homepage/banner';
-@import 'sass/sidebar/sidebar';
-@import 'sass/sidebar/blog-sidebar';
-@import 'sass/widgets/widget-categories';
-@import 'sass/widgets/widget-recent-entries';
-@import 'sass/widgets/widget-subpages';
+@import 'sass/variables/_breakpoints';
+@import 'sass/variables/_colors';
+@import 'sass/variables/_font-sizes';
+@import 'sass/variables/_fonts';
+@import 'sass/variables/_measurements';
+@import 'sass/mixins/_clearfix';
+@import 'sass/mixins/_font-size';
+@import 'sass/mixins/_grid-fallback';
+@import 'sass/mixins/_media-query';
+@import 'sass/base/_a_reset';
+@import 'sass/base/_base';
+@import 'sass/base/_grid';
+@import 'sass/helpers/_sr-only';
+@import 'sass/components/_buttons';
+@import 'sass/components/_icons';
+@import 'sass/components/_layout';
+@import 'sass/components/_pagination';
+@import 'sass/components/_responsive-video';
+@import 'sass/components/_wp-caption';
+@import 'sass/components/footer/_site-footer';
+@import 'sass/components/forms/_generic-form-styles';
+@import 'sass/components/header/_search-form';
+@import 'sass/components/header/_site-header';
+@import 'sass/components/header/_site-nav';
+@import 'sass/components/homepage/_banner';
+@import 'sass/components/homepage/_content';
+@import 'sass/components/homepage/_ctas';
+@import 'sass/components/homepage/_latest-news';
+@import 'sass/components/pages/_campaign';
+@import 'sass/components/pages/_pages';
+@import 'sass/components/posts/_comments';
+@import 'sass/components/posts/_post-preview';
+@import 'sass/components/posts/_post';
+@import 'sass/components/posts/_related-posts';
+@import 'sass/components/sidebar/_blog-sidebar';
+@import 'sass/components/sidebar/_sidebar';
+@import 'sass/components/widgets/_widget-categories';
+@import 'sass/components/widgets/_widget-recent-entries';
+@import 'sass/components/widgets/_widget-subpages';

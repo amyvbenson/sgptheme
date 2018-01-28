@@ -7,7 +7,7 @@
 get_header(); ?>
 
   <main id="main" role="main" class="container">
-    <div class="col-sm-12">
+    <div class="col-md-12">
       <div class="homepage-content">
         <?php get_template_part( 'template-parts/homepage/latest-news'); ?>
         <?php get_template_part( 'template-parts/homepage/ctas'); ?>

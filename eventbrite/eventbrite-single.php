@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <div class="container">
-  <main id="main" class="col-sm-8" role="main">
+  <main id="main" class="col-md-8" role="main">
     <div class="content-block content-block--large">
       <?php
         // Get our event based on the ID passed by query variable.
@@ -46,7 +46,7 @@ get_header(); ?>
     </div>
   </main>
 
-  <div class="col-sm-4">
+  <div class="col-md-4">
     <?php get_template_part( 'template-parts/sidebar/events'); ?>
   </div>
 

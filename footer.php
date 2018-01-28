@@ -13,10 +13,10 @@
 	<footer class="site-footer" role="contentinfo">
 		<div class="container">
       <div>
-        <div class="col-sm-8">
+        <div class="col-md-8">
           <?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
         </div>
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12 col-md-4">
           <h2>Connect with us:</h2>
           <div class="site-footer__social">
             <a href="http://www.facebook.com/pages/Sheffield-Green-Party/">

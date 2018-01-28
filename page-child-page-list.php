@@ -8,7 +8,7 @@ get_header(); ?>
 
   <div class="container">
 
-    <main id="main" class="col-sm-8" role="main">
+    <main id="main" class="col-md-8" role="main">
       <div class="content-block content-block--large">
         <?php
         while ( have_posts() ) : the_post();
@@ -25,7 +25,7 @@ get_header(); ?>
       </div>
     </main>
 
-    <div class="col-sm-4">
+    <div class="col-md-4">
       <?php get_sidebar(); ?>
     </div>
 

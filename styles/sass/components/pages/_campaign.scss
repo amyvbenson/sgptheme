@@ -61,7 +61,7 @@
 }
 
 
-@include media-query(sm) {
+@include media-query(md) {
 
   .campaign-section {
     margin-bottom: $base-unit*4;

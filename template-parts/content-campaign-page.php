@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <div class="col-sm-12">
+    <div class="col-md-12">
       <?php $banner = get_field('campaign_banner'); ?>
       <?php if ($banner): ?>
         <header class="page-banner content-block content-block--large" style="background-image:url(<?php the_field('campaign_banner');?>)">
@@ -20,7 +20,7 @@
       <?php endif; ?>
   </div>
 
-  <div class="col-sm-8">
+  <div class="col-md-8">
     <div class="content-block content-block--large">
       <?php if (get_field('campaign_ctas')): ?>
         <div class="campaign-ctas campaign-section">
@@ -48,7 +48,7 @@
     </div>
   </div>
 
-  <div class="col-sm-4">
+  <div class="col-md-4">
     <?php $cat = get_field('campaign_posts_category'); ?>
     <?php if($cat): ?>
       <div class="widget">
