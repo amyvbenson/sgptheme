@@ -1,3 +1,7 @@
+.post {
+  @include clearfix;
+}
+
 .post-info {
   h2 {
     margin-bottom: $base-unit;
@@ -83,11 +87,14 @@ a.post-info__author-name {
   @include font-size($small-font-size);
 }
 
-@include media-query(xs) {
+@include media-query(sm) {
 
   .page-content {
-    img.alignright, img.alignleft {
-      max-width: 50%;
+    img.alignright,
+    img.alignleft,
+    .wp-caption.alignright,
+    .wp-caption.alignleft {
+      max-width: 50% !important; //to override inline style added for captions
     }
   }
 

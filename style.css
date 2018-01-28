@@ -1341,6 +1341,15 @@ h2.post-preview__heading {
   overflow: hidden;
 }
 
+.post:before, .post:after {
+  content: " ";
+  display: table;
+}
+
+.post:after {
+  clear: both;
+}
+
 .post-info h2 {
   margin-bottom: 8px;
 }
@@ -1426,9 +1435,12 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
   font-size: 0.875rem;
 }
 
-@media (min-width: 0) {
-  .page-content img.alignright, .page-content img.alignleft {
-    max-width: 50%;
+@media (min-width: 576px) {
+  .page-content img.alignright,
+  .page-content img.alignleft,
+  .page-content .wp-caption.alignright,
+  .page-content .wp-caption.alignleft {
+    max-width: 50% !important;
   }
 }
 
