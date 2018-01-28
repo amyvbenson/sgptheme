@@ -24,8 +24,9 @@ input.search-submit {
 @include media-query(sm) {
 
   .search-form {
-    width: $base-unit*24;
     display: inline-block;
+    margin-left: $base-unit;
+    width: 120px;
   }
 
 }
@@ -34,6 +35,7 @@ input.search-submit {
 
   .search-form {
     margin: 0 $base-unit*2;
+    width: 192px;
   }
 
 }

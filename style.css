@@ -1450,10 +1450,6 @@ button, input[type="submit"] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .site-nav a {
     padding: 8px;
@@ -1471,13 +1467,6 @@ button, input[type="submit"] {
   }
 }
 @media only screen and (min-width: 993px) {
-  .site-nav .container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-
   .menu-item {
     margin: 0 2px;
   }
@@ -1512,13 +1501,15 @@ input.search-submit {
 
 @media only screen and (min-width: 768px) {
   .search-form {
-    width: 192px;
     display: inline-block;
+    margin-left: 8px;
+    width: 120px;
   }
 }
 @media only screen and (min-width: 993px) {
   .search-form {
     margin: 0 16px;
+    width: 192px;
   }
 }
 .site-footer {
