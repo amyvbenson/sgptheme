@@ -219,7 +219,7 @@ li {
   margin-bottom: 8px;
 }
 
-img.alignright, .wp-caption.alignright, img.alignleft, .wp-caption.alignleft, img.alignnone, .wp-caption.alignnone {
+img.alignright, .wp-caption.alignright, img.alignleft, .wp-caption.alignleft, img.alignnone, .wp-caption.alignnone, .wp-caption.aligncenter {
   margin: 0 0 16px 0;
 }
 
