@@ -1435,6 +1435,10 @@ a.post-info__author-name:hover, a.post-info__author-name:focus {
   font-size: 0.875rem;
 }
 
+.page-content a {
+  word-wrap: break-word;
+}
+
 @media (min-width: 576px) {
   .page-content img.alignright,
   .page-content img.alignleft,

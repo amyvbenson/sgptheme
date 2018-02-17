@@ -87,6 +87,12 @@ a.post-info__author-name {
   @include font-size($small-font-size);
 }
 
+.page-content {
+  a {
+    word-wrap: break-word;
+  }
+}
+
 @include media-query(sm) {
 
   .page-content {

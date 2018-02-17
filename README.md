@@ -45,6 +45,9 @@ To watch for changes and recompile:
 grunt watch
 ```
 
+You may need to clear the cache if deploy css changes
+Settings > Fast Velocity Minify > Purge the cache files > delete
+
 ## Icons
 
 Uses an inline SVG sprite generated using Icomoon - https://icomoon.io/app/
