@@ -465,6 +465,138 @@ ul.content-block, ul.widget, .sidebar-block__list {
   }
 }
 
+/**
+ * List of all election candidates
+ * Used on page-elections template
+ */
+.all-candidates ul {
+  list-style: none;
+  margin: 0;
+}
+
+.all-candidates li {
+  margin-bottom: 8px;
+}
+
+.all-candidates a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all-candidates img {
+  height: 80px;
+  margin: 0 8px 0 0;
+  width: 80px;
+}
+
+/**
+ * List of all primary and secodary election candidates
+ * Used on page-election template
+ */
+.candidate {
+  margin-bottom: 16px;
+}
+
+.candidate--secondary {
+  background: #eee;
+  border-bottom: 1px solid #6AB023;
+}
+
+.candidate p {
+  margin: 0;
+}
+
+.candidate a {
+  color: #333;
+  text-decoration: none;
+}
+
+.candidate--secondary .candidate__inner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.candidate__inner:hover .candidate__name, .candidate__inner:focus .candidate__name {
+  border-bottom: 1px solid #6AB023;
+}
+
+.candidate--primary .candidate__image {
+  opacity: 1;
+}
+
+.candidate--primary .candidate__image:hover {
+  opacity: 0.8;
+}
+
+.candidate--secondary .candidate__image {
+  height: 120px;
+  margin-right: 8px;
+}
+
+.candidate__info {
+  line-height: 1.2;
+}
+
+.candidate__name {
+  color: #006341;
+  font-weight: bold;
+}
+
+.candidate--secondary .candidate__name {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.candidate__area {
+  display: block;
+  margin-top: 4px;
+}
+
+@media (min-width: 576px) {
+  .candidates {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 16px;
+  }
+  .candidates--2 {
+    -ms-grid-columns: 1fr 1fr;
+  }
+  .candidates--3 {
+    -ms-grid-columns: 1fr 1fr 1fr;
+  }
+  .candidates--4 {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  }
+  .candidates--other {
+    display: block;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+  .candidate {
+    margin-bottom: 16px;
+    -ms-grid-column: 1;
+  }
+  .candidate:nth-child(2) {
+    -ms-grid-column: 2;
+  }
+  .candidate:nth-child(3) {
+    -ms-grid-column: 3;
+  }
+  .candidate:nth-child(4) {
+    -ms-grid-column: 4;
+  }
+}
+
 .site-footer {
   background: #333;
   color: white;
@@ -808,10 +940,43 @@ input.search-submit {
 }
 
 .home-banner {
+  background-color: #6AB023;
+  display: block;
+  margin-bottom: 16px;
+  text-decoration: none;
   width: 100%;
-  height: 360px;
-  background: #59941d;
-  margin-bottom: 32px;
+}
+
+.home-banner__image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: block;
+  padding-top: 31.25%;
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  .home-banner__desktop {
+    background-image: none !important;
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .home-banner {
+    background-color: #6AB023;
+  }
+  .home-banner__image {
+    padding-top: 24.6710526316%;
+  }
+  .home-banner__desktop {
+    display: block;
+  }
+  .home-banner__mobile {
+    background-image: none !important;
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {

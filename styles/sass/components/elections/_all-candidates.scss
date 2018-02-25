@@ -1,0 +1,28 @@
+/**
+ * List of all election candidates
+ * Used on page-elections template
+ */
+
+.all-candidates {
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: $base-unit;
+  }
+
+  a {
+    align-items: center;
+    display: flex;
+
+  }
+
+  img {
+    height: 80px;
+    margin: 0 $base-unit 0 0;
+    width: 80px;
+  }
+}

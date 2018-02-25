@@ -1,0 +1,119 @@
+/**
+ * List of all primary and secodary election candidates
+ * Used on page-election template
+ */
+
+.candidate {
+  margin-bottom: $base-unit * 2;
+
+  &--secondary {
+    background: $block-light-grey;
+    border-bottom: 1px solid $border-green;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: $text-dark;
+    text-decoration: none;
+  }
+}
+
+.candidate__inner {
+
+  .candidate--secondary & {
+    align-items: center;
+    display: flex;
+  }
+
+  &:hover,
+  &:focus {
+    .candidate__name {
+      border-bottom: 1px solid $border-green;
+    }
+  }
+}
+
+.candidate__image {
+
+  .candidate--primary & {
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.8;
+
+    }
+  }
+
+  .candidate--secondary & {
+    height: 120px;
+    margin-right: $base-unit;
+  }
+}
+
+.candidate__info {
+  line-height: 1.2;
+}
+
+.candidate__name {
+  color: $text-green;
+  font-weight: bold;
+
+  .candidate--secondary & {
+    @include font-size($medium-font-size);
+  }
+}
+
+.candidate__area {
+  display: block;
+  margin-top: $base-unit / 2;
+}
+
+@include media-query(sm) {
+
+  .candidates {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    grid-gap: $base-unit * 2;
+
+    &--2 {
+      -ms-grid-columns: 1fr 1fr;
+    }
+
+    &--3 {
+      -ms-grid-columns: 1fr 1fr 1fr;
+    }
+
+    &--4 {
+      -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    &--other {
+      display: block;
+      column-count: 2;
+    }
+  }
+
+  .candidate {
+    margin-bottom: $base-unit * 2;
+
+    -ms-grid-column: 1;
+
+    &:nth-child(2) {
+      -ms-grid-column: 2;
+    }
+
+    &:nth-child(3) {
+      -ms-grid-column: 3;
+    }
+
+    &:nth-child(4) {
+      -ms-grid-column: 4;
+    }
+
+  }
+
+}

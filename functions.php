@@ -351,6 +351,19 @@ function sgp_category_ids($slugs) {
   return $cat_str;
 }
 
+/**
+ * Order candadates by custom field 'order'
+ */
+function sgp_order_candidates($candidates) {
+  usort($candidates, function($a, $b) {
+    return strcmp($a->order,$b->order);
+  });
+  return $candidates;
+}
+
+/**
+ * Set custom template for a category
+ */
 function sgp_get_custom_cat_template($single_template) {
   global $post;
   if ( in_category( 'city-ward-blog' )) {
