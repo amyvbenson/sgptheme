@@ -490,7 +490,7 @@ ul.content-block, ul.widget, .sidebar-block__list {
 .all-candidates img {
   height: 80px;
   margin: 0 8px 0 0;
-  width: 80px;
+  width: auto;
 }
 
 /**
