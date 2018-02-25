@@ -7,6 +7,7 @@
 get_header(); ?>
 
 <main id="main" role="main">
+  <?php while ( have_posts() ) : the_post(); ?>
   <div class="container">
 
     <div class="col-sm-12">
@@ -39,6 +40,7 @@ get_header(); ?>
       <?php dynamic_sidebar('elections-sidebar'); ?>
     </div>
   </div>
+  <?php endwhile; ?>
 </main>
 
 <?php get_footer(); ?>
