@@ -1,0 +1,27 @@
+.sharing__links {
+  display: flex;
+  margin-bottom: $base-unit;
+}
+
+.sharing__link {
+  display: block;
+  margin-right: $base-unit*3;
+  text-decoration: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  svg {
+    fill: $dark-green;
+    transition: fill 0.3s ease;
+    vertical-align: bottom;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $gp-green;
+    }
+  }
+}
