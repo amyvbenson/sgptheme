@@ -1275,6 +1275,31 @@ input.search-submit {
   left: 36px;
 }
 
+.page-header__newsletter {
+  background: #006341;
+  color: white;
+  display: block;
+  margin-left: -32px;
+  margin-right: -32px;
+  margin-top: -32px;
+  margin-bottom: 16px;
+  padding: 32px 40px;
+  text-decoration: none;
+}
+
+.page-header__newsletter-heading {
+  font-size: 32px;
+  font-size: 2rem;
+  font-family: "bebas-neue", helvetica, arial, sans-serif;
+  line-height: 1;
+}
+
+.page-header__newsletter-tagline {
+  display: block;
+  font-style: italic;
+  font-weight: bold;
+}
+
 .page-title {
   border-bottom: 1px solid #6AB023;
   margin: 0;

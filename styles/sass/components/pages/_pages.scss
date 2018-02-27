@@ -24,6 +24,30 @@
   }
 }
 
+.page-header__newsletter {
+  background: $block-dark-green;
+  color: $text-light;
+  display: block;
+  margin-left: -$base-unit*4;
+  margin-right: -$base-unit*4;
+  margin-top: -$base-unit*4;
+  margin-bottom: $base-unit * 2;
+  padding: $base-unit*4 $base-unit*5;
+  text-decoration: none;
+}
+
+.page-header__newsletter-heading {
+  @include font-size($large-font-size);
+  font-family: $heading-font;
+  line-height: 1;
+}
+
+.page-header__newsletter-tagline {
+  display: block;
+  font-style: italic;
+  font-weight: bold;
+}
+
 .page-title {
   border-bottom: 1px solid $border-green;
   margin: 0;
