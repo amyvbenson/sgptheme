@@ -447,6 +447,23 @@ ul.content-block, ul.widget, .sidebar-block__list {
   height: 100%;
 }
 
+table {
+  border-left: 1px solid #CCC;
+  border-top: 1px solid #CCC;
+  margin-bottom: 16px;
+}
+
+td, th {
+  border-bottom: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  padding: 4px;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}
+
 .wp-caption {
   padding: 8px;
   border: 1px solid #CCC;

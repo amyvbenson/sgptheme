@@ -1,0 +1,16 @@
+table {
+	border-left: 1px solid $border-grey;
+  border-top: 1px solid $border-grey;
+  margin-bottom: $base-unit*2;
+}
+
+td, th {
+  border-bottom: 1px solid $border-grey;
+  border-right: 1px solid $border-grey;
+  padding: $base-unit/2;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}
