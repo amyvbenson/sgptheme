@@ -112,10 +112,12 @@
 
   }
 
+}
+
+@include media-query(md) {
   .candidate__name {  
     .candidate--secondary & {
       @include font-size($medium-font-size);
     }
   }
-
 }

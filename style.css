@@ -607,6 +607,9 @@ th {
   .candidate:nth-child(4) {
     -ms-grid-column: 4;
   }
+}
+
+@media (min-width: 768px) {
   .candidate--secondary .candidate__name {
     font-size: 20px;
     font-size: 1.25rem;
