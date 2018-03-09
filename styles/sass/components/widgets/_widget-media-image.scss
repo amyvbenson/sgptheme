@@ -1,0 +1,17 @@
+.widget_media_image {
+  padding: 0;
+
+  a {
+    display: block;
+    line-height: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+
+    &:hover,
+    &:focus {
+      img {
+        opacity: 0.9;
+      }
+    }
+  }
+}

@@ -1828,6 +1828,21 @@ h2.post-preview__heading {
   font-weight: normal;
 }
 
+.widget_media_image {
+  padding: 0;
+}
+
+.widget_media_image a {
+  display: block;
+  line-height: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.widget_media_image a:hover img, .widget_media_image a:focus img {
+  opacity: 0.9;
+}
+
 .widget_recent_entries ul, .widget_listcategorypostswidget ul {
   list-style: none;
   margin: 0;
