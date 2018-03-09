@@ -567,11 +567,6 @@ th {
   font-weight: bold;
 }
 
-.candidate--secondary .candidate__name {
-  font-size: 20px;
-  font-size: 1.25rem;
-}
-
 .candidate__area {
   display: block;
   margin-top: 4px;
@@ -611,6 +606,10 @@ th {
   }
   .candidate:nth-child(4) {
     -ms-grid-column: 4;
+  }
+  .candidate--secondary .candidate__name {
+    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 

@@ -60,10 +60,6 @@
 .candidate__name {
   color: $text-green;
   font-weight: bold;
-
-  .candidate--secondary & {
-    @include font-size($medium-font-size);
-  }
 }
 
 .candidate__area {
@@ -114,6 +110,12 @@
       -ms-grid-column: 4;
     }
 
+  }
+
+  .candidate__name {  
+    .candidate--secondary & {
+      @include font-size($medium-font-size);
+    }
   }
 
 }
