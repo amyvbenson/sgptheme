@@ -37,10 +37,15 @@ Page areas:
 
 Template for the homepage.
 
-Banner (note all 3 fields must be populated for the banner to show):
+Banner (all 3 fields must be populated for the banner to show):
 - Desktop banner (custom field): 1216x300px. Displayed on screens above 575px wide. The alt text of the desktop image is used as screen reader only text for the banner so don't forget it!
 - Mobile banner (custom field): 576x180px. Displayed on screens below 576px wide.
 - Banner link (custom field): The page / post the banner should link to.
+
+Secondary banner (all 3 fields must be populated for the banner to show). If a secndary banner exists it displays next to the main banner on desktop, making the main one smaller:
+- Secondary desktop banner (custom field): 296x219px. Displayed on screens above 575px wide. The alt text of the desktop image is used as screen reader only text for the banner so don't forget it!)
+- Secondary Mobile banner (custom field): 576x180px. Displayed on screens below 576px wide.
+- Secondary Banner link (custom field): The url the banner should link to.
 
 ## page
 
