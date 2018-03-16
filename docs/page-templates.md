@@ -21,7 +21,7 @@ Template for a specific election page.
 Page areas:
 
 - Intro (custom field): text that shows below the title.
-- Candidates (custom fields): assign candidates as primary or secondary to determine their size and priority
+- Featured Candidates (custom fields): assign candidates to featured on the page
 - All candidates link (custom field): link to a page that lists all candidates
 - Manifesto TO DO
 - Content
