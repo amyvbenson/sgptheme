@@ -24,7 +24,7 @@ get_header(); ?>
       <div class="col-md-4">
         <div class="content-block">
           <h2>About City Ward</h2>
-          <p>City Ward includes the city centre, Kelham Island, Shoreham Street and the University area. It has two Green Party Councillors, Douglas Johnson and Rob Murphy</p>
+          <p>City Ward includes the city centre, Kelham Island, Shoreham Street and the University area. It has three Green Party Councillors, Douglas Johnson, Rob Murphy and Martin Phipps</p>
           <a href="https://www.facebook.com/sheffieldcentralgreens/" class="primary-btn">City Ward on Facebook</a>
         </div>
       </div>
