@@ -375,15 +375,6 @@ function sgp_get_custom_cat_template($single_template) {
 add_filter( 'single_template', 'sgp_get_custom_cat_template' ) ;
 
 /**
- * Set upload limit
- */
-@ini_set( 'upload_max_size' , '5M' );
-@ini_set( 'post_max_size', '5M');
-@ini_set( 'max_execution_time', '300' );
-
-
-
-/**
  * Implement the Custom Header feature.
  */
 // require get_template_directory() . '/inc/custom-header.php';
