@@ -103,7 +103,7 @@ function sgp_widgets_init() {
     'name'          => esc_html__( 'Footer text', 'sgp' ),
     'id'            => 'footer-text',
     'description'   => esc_html__( 'Add widgets here.', 'sgp' ),
-    'before_widget' => '<div class="site-footer__small-print">',
+    'before_widget' => '<div>',
     'after_widget'  => '</div>'
   ) );
   register_sidebars(1, array(
