@@ -1342,6 +1342,10 @@ input.search-submit {
   font-weight: bold;
 }
 
+.page-header__full-width {
+  margin-bottom: 0;
+}
+
 .page-title {
   border-bottom: 1px solid #6AB023;
   margin: 0;

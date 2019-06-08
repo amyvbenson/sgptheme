@@ -63,8 +63,9 @@ get_header(); ?>
   </main>
 
   <div class="col-md-4">
-    <?php dynamic_sidebar('events-sidebar'); ?>
-    <?php get_sidebar(); ?>
+    <?php while ( have_posts() ) : the_post(); ?>      
+      <?php the_content(); ?>
+    <?php endwhile; ?>
   </div>
 </div>
 
