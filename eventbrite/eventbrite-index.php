@@ -19,7 +19,7 @@ get_header(); ?>
 
     <div class="col-md-6">
       <div class="content-block">
-        <h2 class="latest-news-heading">Latest News</h2>
+        <h2 class="latest-news-heading">Bookable events</h2>
           <?php
           // Set up and call our Eventbrite query.
           $events = new Eventbrite_Query( apply_filters( 'eventbrite_query_args', array(
@@ -59,7 +59,7 @@ get_header(); ?>
             eventbrite_paging_nav( $events );
 
           else : ?>
-            <p><em>There are no events coming up soon, please check back again later.</em></p>
+            <p><em>There are no bookable events coming up soon, please check back again later.</em></p>
           <?php endif;
 
           // Return $post to its rightful owner.
@@ -69,6 +69,7 @@ get_header(); ?>
     </div>
     <div class="col-md-6">
       <div class="content-block">
+      <h2 class="latest-news-heading">Other events</h2>
       <?php while ( have_posts() ) : the_post(); ?>      
         <?php the_content(); ?>
       <?php endwhile; ?>
