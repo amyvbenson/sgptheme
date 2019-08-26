@@ -30,6 +30,9 @@ get_header(); ?>
       if ($post->post_name === 'city-ward'): ?>
         <?php get_template_part( 'template-parts/sidebar/city-ward-blog' ); ?>
         <?php dynamic_sidebar('city-ward-blog-sidebar'); ?>
+      <?php elseif ($post->post_name === 'gleadless-valley'): ?>
+      <?php get_template_part( 'template-parts/sidebar/gleadless-valley-blog' ); ?>
+        <?php dynamic_sidebar('gleadless-valley-blog-sidebar'); ?>
       <?php else: ?>
         <?php get_sidebar(); ?>
       <?php endif; ?>

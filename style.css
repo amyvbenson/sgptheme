@@ -1382,8 +1382,16 @@ input.search-submit {
     background-position: right bottom;
   }
   .page-banner--city {
-    background: url("images/city-blog-banner.jpg") left top no-repeat;
+    background: #6AB023 url("images/city-blog-banner.jpg") left top no-repeat;
     background-size: 100% auto;
+  }
+  .page-banner--gleadless {
+    background: #6AB023 url("images/gv-blog-banner.jpg") left top no-repeat;
+    background-size: 100% auto;
+  }
+  .page-banner--gleadless .page-banner__tagline {
+    font-size: 20px;
+    font-size: 1.25rem;
   }
   .page-banner__inner {
     background: rgba(255, 255, 255, 0.6);
@@ -1408,6 +1416,10 @@ input.search-submit {
   }
   .page-banner__inner {
     width: 40%;
+  }
+  .page-banner--gleadless .page-banner__tagline {
+    font-size: 32px;
+    font-size: 2rem;
   }
   .page-banner__title {
     font-size: 64px;
@@ -1714,6 +1726,12 @@ h2.post-preview__heading {
 @media (min-width: 1025px) {
   .blog-sidebar-header--city {
     background: url("images/city-ward-blog.jpg") center top no-repeat;
+    background-size: 100% auto;
+    height: 300px;
+    position: relative;
+  }
+  .blog-sidebar-header--gleadless {
+    background: url("images/gv-blog-sidebar.jpg") center no-repeat;
     background-size: 100% auto;
     height: 300px;
     position: relative;

@@ -90,8 +90,17 @@
   }
 
   .page-banner--city {
-    background: url('images/city-blog-banner.jpg') left top no-repeat;
+    background: $gp-green url('images/city-blog-banner.jpg') left top no-repeat;
     background-size: 100% auto;
+  }
+
+  .page-banner--gleadless {
+    background: $gp-green url('images/gv-blog-banner.jpg') left top no-repeat;
+    background-size: 100% auto;
+
+    .page-banner__tagline {
+      @include font-size($medium-font-size);
+    }
   }
 
   .page-banner__inner {
@@ -120,6 +129,12 @@
 
   .page-banner__inner {
     width: 40%;
+  }
+
+  .page-banner--gleadless {
+    .page-banner__tagline {
+      @include font-size($large-font-size);
+    }
   }
 
   .page-banner__title {

@@ -116,6 +116,15 @@ function sgp_widgets_init() {
     'after_title'   => '</h2>',
   ) );
   register_sidebars(1, array(
+    'name'          => esc_html__( 'Gleadless Valley Blog', 'sgp' ),
+    'id'            => 'gleadless-valley-blog-sidebar',
+    'description'   => esc_html__( 'Add widgets here.', 'sgp' ),
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+  ) );
+  register_sidebars(1, array(
     'name'          => esc_html__( 'Elections', 'sgp' ),
     'id'            => 'elections-sidebar',
     'description'   => esc_html__( 'Add widgets here.', 'sgp' ),
@@ -359,6 +368,9 @@ function sgp_get_custom_cat_template($single_template) {
   global $post;
   if ( in_category( 'city-ward-blog' )) {
     $single_template = dirname( __FILE__ ) . '/single-city-ward-blog.php';
+  }
+  if ( in_category( 'gleadless-valley-blog' )) {
+    $single_template = dirname( __FILE__ ) . '/single-gleadless-valley-blog.php';
   }
   return $single_template;
 }

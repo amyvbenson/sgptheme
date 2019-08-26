@@ -27,6 +27,13 @@
     position: relative;
   }
 
+  .blog-sidebar-header--gleadless {
+    background: url('images/gv-blog-sidebar.jpg') center no-repeat;
+    background-size: 100% auto;
+    height: 300px;
+    position: relative;
+  }
+
   .blog-sidebar-header__content {
     background: rgba(0, 99, 65, 0.8);
     position: absolute;
