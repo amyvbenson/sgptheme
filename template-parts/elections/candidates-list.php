@@ -19,8 +19,6 @@
 
     <?php if(get_field('link_to_all_candidates')): ?>
       <a href="<?php the_field('link_to_all_candidates'); ?>" class="all-candidates-link">Plus many more<br>See the full list of candidates ></a>
-    <?php else: ?>
-      <span class="all-candidates-link">Plus many more<br> to be announced soon</span>
     <?php endif; ?>
 
   </div>
