@@ -22,6 +22,9 @@
       <a href="http://www.youtube.com/user/sheffieldgreenparty/">
         <?php echo svg_icon('youtube', 'YouTube') ?>
       </a>
+      <a href="https://www.instagram.com/sheffieldgreens/">
+        <?php echo svg_icon('instagram', 'Instagram') ?>
+      </a>
     </div>
 
   </div>

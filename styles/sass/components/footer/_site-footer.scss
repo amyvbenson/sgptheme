@@ -83,11 +83,25 @@
     margin-top: $base-unit*2;
   }
 
+  .site-footer__social {
+    a {
+      margin: 0 $base-unit 0 0;
+    }
+  }
+
   .site-footer__small-print {
     margin-top: $base-unit*2;
   }
 
   #mc_embed_signup {
     padding-right: $base-unit*2;
+  }
+}
+
+@include media-query(lg) {
+  .site-footer__social {
+    a {
+      margin: 0 $base-unit*3 0 0;
+    }
   }
 }

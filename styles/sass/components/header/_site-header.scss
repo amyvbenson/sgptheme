@@ -72,13 +72,13 @@
     a {
       display: inline-block;
       text-decoration: none;
-      margin-left: $base-unit*1.5;
+      margin-left: $base-unit*0.5;
       background: transparent;
-      width: $base-unit*4.5;
-      height: $base-unit*4.5;
+      width: $base-unit*4;
+      height: $base-unit*4;
       border-radius: 100%;
       text-align: center;
-      line-height: $base-unit*4.5;
+      line-height: $base-unit*4;
       transition: background 0.3s ease;
 
       &:hover,
@@ -112,6 +112,13 @@
 
   .site-header__social {
     top: $base-unit*4;
+
+    a {
+      margin-left: $base-unit*1.5;
+      width: $base-unit*4.5;
+      height: $base-unit*4.5;
+      line-height: $base-unit*4.5;
+    }
   }
 
 }
