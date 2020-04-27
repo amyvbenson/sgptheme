@@ -4,3 +4,4 @@
     Regular updates from your Green Party team in City Ward
   </span>
 </a>
+<?php get_template_part( 'template-parts/sidebar/city-ward-blog-subscribe', 'category' ); ?>

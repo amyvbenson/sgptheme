@@ -62,21 +62,6 @@
   }
 }
 
-#mc_embed_signup {
-  margin-bottom: $base-unit*2;
-
-  label {
-    display: block;
-    font-family: $heading-font;
-    @include font-size($medium-font-size);
-    margin-bottom: $base-unit*1.5;
-  }
-}
-
-.mc-input-wrapper {
-  display: flex;
-}
-
 @include media-query(md) {
 
   .site-footer {
@@ -91,10 +76,6 @@
 
   .site-footer__small-print {
     margin-top: $base-unit*2;
-  }
-
-  #mc_embed_signup {
-    padding-right: $base-unit*2;
   }
 }
 

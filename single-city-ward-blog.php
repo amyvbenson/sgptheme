@@ -28,7 +28,6 @@ get_header(); ?>
     </main>
     <div class="col-md-4">
       <?php get_template_part( 'template-parts/sidebar/city-ward-blog' ); ?>
-      <?php get_template_part( 'template-parts/sidebar/post-author' ); ?>
       <?php dynamic_sidebar('city-ward-blog-sidebar'); ?>
     </div>
 

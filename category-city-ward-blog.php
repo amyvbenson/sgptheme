@@ -27,6 +27,7 @@ get_header(); ?>
           <p><?php echo category_description(); ?></p>
           <a href="https://www.facebook.com/sheffieldcentralgreens/" class="primary-btn">City Ward on Facebook</a>
         </div>
+        <?php get_template_part( 'template-parts/sidebar/city-ward-blog-subscribe', 'category' ); ?>
       </div>
     </main>
 
