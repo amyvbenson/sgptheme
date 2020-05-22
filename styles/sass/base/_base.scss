@@ -73,6 +73,11 @@ li {
   margin-bottom: $base-unit;
 }
 
+blockquote {
+  padding: 0 $base-unit*2 $base-unit*2 $base-unit*2;
+  font-style: italic;
+}
+
 img.alignright, .wp-caption.alignright, img.alignleft, .wp-caption.alignleft, img.alignnone, .wp-caption.alignnone, .wp-caption.aligncenter {
   margin: 0 0 $base-unit*2 0;
 }
@@ -97,6 +102,10 @@ hr {
 }
 
 @include media-query(sm) {
+
+  blockquote {
+    padding: 0 $base-unit*5 $base-unit*2 $base-unit*5;
+  }
 
   img.alignright, .wp-caption.alignright {
     float: right;

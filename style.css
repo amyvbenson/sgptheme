@@ -219,6 +219,11 @@ li {
   margin-bottom: 8px;
 }
 
+blockquote {
+  padding: 0 16px 16px 16px;
+  font-style: italic;
+}
+
 img.alignright, .wp-caption.alignright, img.alignleft, .wp-caption.alignleft, img.alignnone, .wp-caption.alignnone, .wp-caption.aligncenter {
   margin: 0 0 16px 0;
 }
@@ -243,6 +248,9 @@ hr {
 }
 
 @media (min-width: 576px) {
+  blockquote {
+    padding: 0 40px 16px 40px;
+  }
   img.alignright, .wp-caption.alignright {
     float: right;
     margin: 0 0 16px 16px;
