@@ -42,17 +42,9 @@ These are used for content we need to be publicly accessible but only want peopl
 
 8. Make sure that Comments, Trackbacks and Pingbacks are turned off (they should eb by default for pages), this is under Discussion, you may need to look int Screen Options on the top right to make this section visible.
 
-9. Save Draft
+9. Tick exclude from search results
 
-10. Get the page ID from the URL, e.g. for http://sheffieldgreenparty.org.uk/wp-admin/post.php?post=12345&action=edit the ID would be 12345
+10. Publish
 
-11. Open Settings > Search Everything in a new tab
-
-12. Under Search Engine Advanced Configuration, add the page ID to the Exclude some post or page IDs field
-
-13. Save Changes
-
-14. Go back to your draft page and publish it.
-
-15. Check that the page does not appear in the RSS feed http://sheffieldgreenparty.org.uk/feed/, the sitemap http://sheffieldgreenparty.org.uk/sitemap.xml and that it doesn't appear in the search results (search from any page).
+11. Check that the page does not appear in the RSS feed http://sheffieldgreenparty.org.uk/feed/, the sitemap http://sheffieldgreenparty.org.uk/sitemap.xml and that it doesn't appear in the search results (search from any page).
 
