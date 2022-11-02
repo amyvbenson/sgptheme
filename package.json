@@ -7,7 +7,7 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0",
     "grunt-sass-import": "^0.2.2",
-    "load-grunt-tasks": "^0.6.0"
+    "load-grunt-tasks": "^5.1.0"
   },
   "browserslist": [
     "last 2 versions",
